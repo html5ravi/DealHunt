@@ -1,0 +1,29 @@
+.signin {
+    text-align: center;
+}
+
+.signin img {
+    width: 100px;
+    margin-top: 50px;
+}
+
+.signin h3 {
+    font-size: 50px;
+    font-weight: 300;
+}
+
+.full-width {
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.signin p {
+    margin-bottom: 50px;
+}
+
+.signin a {
+    margin-bottom: 15px;
+    color: #333;
+    display: block;
+}
