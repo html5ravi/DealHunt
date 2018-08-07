@@ -1,0 +1,11 @@
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { pageRouting } from './page.routing';
+@NgModule({
+  imports: [
+    CommonModule,
+    pageRouting
+  ],
+  declarations: []
+})c
+export class PagesModule { }

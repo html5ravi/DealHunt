@@ -1,0 +1,54 @@
+.logoBar {
+    background: #fff;
+    height: 70px;
+    width: 100%;
+    text-align: center;
+    img {
+        height: 40px;
+        margin: 15px 0 0 0;
+    }
+}
+
+mat-nav-list {
+    a {
+        font-size: 15px;
+        color: #000;
+        font-weight: 300;
+    }
+}
+
+.sidenav-container {
+    height: 100%;
+}
+
+.sidenav {
+    width: 300px;
+    .mat-toolbar-single-row {
+        flex-direction: column;
+        align-items: baseline !important;
+    }
+}
+
+.mat-toolbar.mat-primary {
+    position: sticky;
+    top: 0;
+    .profileImg {
+        height: 60px;
+        margin-bottom: 15px;
+        width: 60px;
+        margin-top: 20px;
+        border: 1px solid gray;
+        border-radius: 50%;
+        overflow: hidden;
+        background: #f00;
+    }
+    .profileDetail {
+        text-transform: uppercase;
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+}
+
+.mat-toolbar-single-row {
+    height: auto;
+}
