@@ -1,0 +1,31 @@
+.done {
+    text-align: center;
+    position: relative;
+    height: 100%;
+}
+
+.done h3 {
+    font-size: 38px;
+    font-weight: 300;
+}
+
+.done img {
+    width: 50px;
+    margin-top: 50px;
+}
+
+.done p {
+    margin-bottom: 50px;
+}
+
+.done .btnCont {
+    right: 16px;
+    left: 16px;
+    position: absolute;
+    bottom: 50px;
+    z-index: 99;
+}
+
+.btnCont .btn {
+    width: 100%;
+}

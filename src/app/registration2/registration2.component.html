@@ -2,19 +2,21 @@
     <img src="../../assets/img/icon_user.png" alt="">
     <h3>Sign In</h3>
 
-    <div class="form-group">
-        <form [formGroup]="signIn_form">
-            <div class="form-group">
-                <mat-form-field class="full-width">
-                    <input matInput placeholder="Enter OTP Number" formControlName="otp" type="password" value="452154">
-                </mat-form-field>
-                <!--<mat-error *ngIf="otp.hasError('required')">
+
+    <form [formGroup]="signIn_form">
+        <div class="form-group">
+            <mat-form-field class="full-width">
+                <input matInput placeholder="Enter OTP Number" formControlName="otp" type="password" value="452154">
+            </mat-form-field>
+            <!--<mat-error *ngIf="otp.hasError('required')">
                     OTP is <strong>required</strong>
                 </mat-error>-->
-            </div>
-            <p>We've sent the confirmation code to your mobile. Please confirm to login.</p>
+        </div>
+        <p>We've sent the confirmation code to your mobile. Please confirm to login.</p>
+        <div class="btnCont">
             <a href="javascript:;">Resend</a>
             <button class="btn custom" type="submit">Submit</button>
-        </form>
-    </div>
+        </div>
+    </form>
+
 </div>
