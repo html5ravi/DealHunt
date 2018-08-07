@@ -7,5 +7,5 @@ import { pageRouting } from './page.routing';
     pageRouting
   ],
   declarations: []
-})c
+})
 export class PagesModule { }
