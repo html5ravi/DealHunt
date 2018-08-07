@@ -1,0 +1,13 @@
+.listItems{
+	margin:20px;
+	padding: 0;
+}
+
+.listItems li{
+	margin:0;
+	padding: 10px;
+	list-style: none;
+    border-bottom: 1px solid #dadada; 
+    position: relative;
+}
+

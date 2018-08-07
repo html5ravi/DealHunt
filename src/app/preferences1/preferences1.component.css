@@ -1,0 +1,73 @@
+.categories{
+	margin: 20% auto 0 auto;
+    padding: 0;
+    width: 325px;
+    text-align: center;
+}
+
+.categories li{
+	margin: 0;
+	padding: 10px;
+	list-style: none;
+	float: left;
+    width: 50%;
+    border-bottom: 2px solid #ccc;
+    border-right: 2px solid #ccc;
+}
+.categories li:nth-child(2){
+	border-bottom: 2px solid #ccc;
+    border-right: none;
+}
+.categories li:nth-child(3){
+	border-bottom: none;
+}
+.categories li:nth-child(4){
+	border-bottom: none;
+    border-right: none;
+}
+.categories li i{
+	background-size: 65% !important;
+	height: 110px !important;
+	background-position: center !important;
+}
+.categories li h5{
+	margin: 20px 0;
+	padding: 0;
+	font-size: 18px;
+	text-transform: uppercase;
+	color:#aaaaaa;
+}
+.categories li.active h5{
+	color:#44616f;
+}
+
+.categories li .restaurants{
+	margin: 0;
+	padding: 0;
+	display: block;
+	background: url('/assets/img/restaurant.png') no-repeat;
+}
+.categories li.active .restaurants{
+	background: url('/assets/img/restaurant_active.png') no-repeat;
+}
+
+.categories li .fashion{
+	margin: 0;
+	padding: 0;
+	display: block;
+	background: url('/assets/img/fashion.png') no-repeat;
+}
+
+.categories li .electronics{
+	margin: 0;
+	padding: 0;
+	display: block;
+	background: url('/assets/img/electronics.png') no-repeat;
+}
+
+.categories li .beauty{
+	margin: 0;
+	padding: 0;
+	display: block;
+	background: url('/assets/img/beauty.png') no-repeat;
+}

@@ -1,0 +1,42 @@
+.signUpContainer{
+	padding: 20px;
+}
+.signUpContainer .form-control{
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	border-bottom: 1px solid #dadada; 
+	border-radius: 0;
+	padding: 0; 
+}
+.signUpContainer .form-group{
+	position: relative;
+}
+.signUpContainer .form-group label{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+.signUpContainer .form-group .name{
+	padding: 0 0 0 45px;
+}
+
+.signUpContainer .form-group .email{
+	padding: 0 0 0 45px;
+}
+
+.signUpContainer .form-group .mobile{
+	padding: 0 0 0 115px;
+}
+.signUpContainer .form-group .city{
+	padding: 0 0 0 40px;
+}
+.signUpContainer .form-group .gender{
+	padding: 0 0 0 60px;
+}
+.signUpContainer .form-group .form-control:focus + label{
+    color: red;
+}
+

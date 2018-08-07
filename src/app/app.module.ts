@@ -29,9 +29,13 @@ import { SignupComponent } from './signup/signup.component';
 import { Preferences1Component } from './preferences1/preferences1.component';
 import { Preferences2Component } from './preferences2/preferences2.component';
 // import { PagesModule } from './pages/pages.module';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import {MatInputModule} from '@angular/material/input';
 @NgModule({
     imports: [
         BrowserModule,
+        MatCheckboxModule,
+        MatInputModule,
         ReactiveFormsModule,
         HttpClientModule,
         routing,
