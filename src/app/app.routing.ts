@@ -10,6 +10,7 @@ import { Registration3Component } from './registration3/registration3.component'
 import { SignupComponent } from './signup/signup.component';
 import { Preferences1Component } from './preferences1/preferences1.component';
 import { Preferences2Component } from './preferences2/preferences2.component';
+import { CategoriesComponent } from './pages/categories.component';
 const appRoutes: Routes = [
     {   path: '', 
         canActivate: [AuthGuard], 
@@ -17,7 +18,16 @@ const appRoutes: Routes = [
         children:[
             {
                 path:'',
+                redirectTo:'home',
+                pathMatch:'full'
+            },
+            {
+                path:'home',
                 component:HomeComponent
+            },
+            {
+                path:'categories',
+                component:CategoriesComponent
             }
         ]
     },
