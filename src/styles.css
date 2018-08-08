@@ -6,6 +6,10 @@ body {
     height: 100%;
 }
 
+button:focus {
+    outline: none !important;
+}
+
 body {
     margin: 0;
     font-family: 'Source Sans Pro', sans-serif;
@@ -157,14 +161,17 @@ header h1 {
 .listItems li .mat-ripple-element {
     background: rgba(34, 192, 100, 0.41) !important;
 }
-.signUpContainer .form-group{
+
+.signUpContainer .form-group {
     margin: 0;
 }
 
-.signUpContainer .form-group .mat-form-field-label{
+.signUpContainer .form-group .mat-form-field-label {
     text-transform: uppercase;
     font-size: 14px;
 }
-.signUpContainer .mat-form-field-infix, .signUpContainer .mat-form-field{
-    width:100%;
+
+.signUpContainer .mat-form-field-infix,
+.signUpContainer .mat-form-field {
+    width: 100%;
 }
