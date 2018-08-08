@@ -31,12 +31,21 @@ import { Preferences2Component } from './preferences2/preferences2.component';
 import { PagesModule } from './pages/pages.module';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatInputModule} from '@angular/material/input';
-// import { CategoriesComponent } from './pages/categories.component';
+
+import {MatSelectModule} from '@angular/material/select';
+import {MatNativeDateModule} from '@angular/material';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {CdkTableModule} from '@angular/cdk/table';
+import {CdkTreeModule} from '@angular/cdk/tree';
+
 @NgModule({
     imports: [
         BrowserModule,
         MatCheckboxModule,
         MatInputModule,
+        MatSelectModule,
+        MatDatepickerModule,
+        MatNativeDateModule,
         ReactiveFormsModule,
         HttpClientModule,
         routing,
@@ -63,7 +72,6 @@ import {MatInputModule} from '@angular/material/input';
         Registration2Component,
         Preferences1Component ,
         Preferences2Component
-        // CategoriesComponent
         ],
     providers: [
         AuthGuard,
