@@ -121,6 +121,10 @@ header h1 {
     text-decoration: none;
 }
 
+.mat-icon-button {
+    margin-left: -10px !important;
+}
+
 
 /*
 ======================= mat checkbox custom styles ============================*/
