@@ -8,19 +8,30 @@ import { ReactiveFormsModule, FormControl, FormsModule, FormGroup, FormBuilder, 
 })
 export class SignupComponent implements OnInit {
   public signUp_form:FormGroup;
-  public formBuilder:FormBuilder;
-  constructor() {
+  public Food:any;
+  constructor( public formBuilder:FormBuilder) {
    
    }
 
   ngOnInit() {
     this.signUp_form = this.formBuilder.group({
-      username: ['', Validators.required],
-      password:['',Validators.required],
-      email: ['', Validators.required]
+      name: ['', Validators.required],
+      email: ['', Validators.required],
+      mobileNumber: ['', Validators.required],
+      city: ['', Validators.required],
+      dob: ['', Validators.required],
+      gender: ['', Validators.required]
   });
   }
 
+  foods: Food[] = [
+    {value: 'bangalore-0', viewValue: 'Bangalore'},
+    {value: 'chennai-1', viewValue: 'Chennai'},
+    {value: 'Delhi-2', viewValue: 'Delhi'}
+  ];
 }
-
+export interface Food {
+  value: string;
+  viewValue: string;
+}
 

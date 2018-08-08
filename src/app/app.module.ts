@@ -28,14 +28,24 @@ import { Registration3Component } from './registration3/registration3.component'
 import { SignupComponent } from './signup/signup.component';
 import { Preferences1Component } from './preferences1/preferences1.component';
 import { Preferences2Component } from './preferences2/preferences2.component';
-// import { PagesModule } from './pages/pages.module';
+import { PagesModule } from './pages/pages.module';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatInputModule} from '@angular/material/input';
+
+import {MatSelectModule} from '@angular/material/select';
+import {MatNativeDateModule} from '@angular/material';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {CdkTableModule} from '@angular/cdk/table';
+import {CdkTreeModule} from '@angular/cdk/tree';
+
 @NgModule({
     imports: [
         BrowserModule,
         MatCheckboxModule,
         MatInputModule,
+        MatSelectModule,
+        MatDatepickerModule,
+        MatNativeDateModule,
         ReactiveFormsModule,
         HttpClientModule,
         routing,
@@ -46,7 +56,8 @@ import {MatInputModule} from '@angular/material/input';
         MatButtonModule,
         MatSidenavModule,
         MatIconModule,
-        MatListModule
+        MatListModule,
+        PagesModule
         ],
     declarations: [
         AppComponent,
