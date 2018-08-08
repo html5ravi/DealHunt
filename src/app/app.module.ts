@@ -70,7 +70,7 @@ import {CdkTreeModule} from '@angular/cdk/tree';
         SignupComponent,
         Registration3Component,
         Registration2Component,
-        Preferences1Component ,
+        Preferences1Component,
         Preferences2Component
         ],
     providers: [

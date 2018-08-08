@@ -11,6 +11,10 @@ import { SignupComponent } from './signup/signup.component';
 import { Preferences1Component } from './preferences1/preferences1.component';
 import { Preferences2Component } from './preferences2/preferences2.component';
 import { CategoriesComponent } from './pages/categories.component';
+import { FinalDealsComponent } from './pages/final-deals.component';
+import { ExclusiveComponent } from './pages/exclusive.component';
+import { HelpdeskComponent } from './pages/helpdesk.component';
+import { SettingsComponent } from './pages/settings.component';
 const appRoutes: Routes = [
     {   path: '', 
         canActivate: [AuthGuard], 
@@ -28,6 +32,22 @@ const appRoutes: Routes = [
             {
                 path:'categories',
                 component:CategoriesComponent
+            },
+            {
+                path:'finaldeals',
+                component:FinalDealsComponent
+            },
+            {
+                path:'exclusive',
+                component:ExclusiveComponent
+            },
+            {
+                path:'settings',
+                component:SettingsComponent
+            },
+            {
+                path:'helpdesk',
+                component:HelpdeskComponent
             }
         ]
     },
