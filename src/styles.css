@@ -243,3 +243,12 @@ header h1 {
 .example-spacer {
     flex: 1 1 auto;
 }
+
+
+/*
+    Final Deals
+*/
+
+.page_final_deals {
+    background: #f5f6f8;
+}
