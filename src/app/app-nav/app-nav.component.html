@@ -25,10 +25,16 @@
     </mat-sidenav>
     <mat-sidenav-content>
         <mat-toolbar color="primary">
-            <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()" *ngIf="isHandset$ | async">
+            <mat-toolbar-row>
+                <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()" *ngIf="isHandset$ | async">
                 <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
             </button>
-            <span>Dealhunt</span>
+                <span>Dealhunt</span>
+                <span class="example-spacer"></span>
+                <mat-icon>notification_important</mat-icon>
+                <mat-icon>search</mat-icon>
+                <mat-icon>person</mat-icon>
+            </mat-toolbar-row>
         </mat-toolbar>
         <!-- Add Content Here -->
 

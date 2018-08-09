@@ -18,6 +18,13 @@ import { HelpdeskComponent } from './helpdesk.component';
     ExclusiveComponent,
     SettingsComponent,
     HelpdeskComponent
+    ],
+    exports:[
+      CategoriesComponent,
+    FinalDealsComponent,
+    ExclusiveComponent,
+    SettingsComponent,
+    HelpdeskComponent
     ]
 })
 export class PagesModule { }

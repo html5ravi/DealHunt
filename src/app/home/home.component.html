@@ -1,4 +1,4 @@
-﻿<h1>
+﻿<!--<h1>
     Hi {{currentUser.firstName}}!</h1>
 <p>You're logged in with Angular 6!!</p>
 <h3>All registered users:</h3>
@@ -7,4 +7,33 @@
         {{user.username}} ({{user.firstName}} {{user.lastName}}) - <a (click)="deleteUser(user.id)" class="text-danger">Delete</a>
     </li>
 </ul>
-<p><a [routerLink]="['/login']">Logout</a></p>
+<p><a [routerLink]="['/login']">Logout</a></p>-->
+
+
+<mat-tab-group headerPosition="below" disableRipple="true">
+    <mat-tab>
+        <ng-template mat-tab-label>
+            <img src="../assets/img/tabicon_hourglass.png" class="icon">
+            <div> Final Deals</div>
+        </ng-template>
+        Content 1
+    </mat-tab>
+    <mat-tab> Content 2
+        <ng-template mat-tab-label>
+            <img src="../assets/img/tabicon_avatar.png" class="icon">
+            <div> My Account</div>
+        </ng-template>
+    </mat-tab>
+    <mat-tab> Content 3
+        <ng-template mat-tab-label>
+            <img src="../assets/img/tabicon_favorites.png" class="icon">
+            <div> DH Exclusive</div>
+        </ng-template>
+    </mat-tab>
+    <mat-tab> Content 3
+        <ng-template mat-tab-label>
+            <img src="../assets/img/tabicon_contract.png" class="icon">
+            <div> List Your Offer</div>
+        </ng-template>
+    </mat-tab>
+</mat-tab-group>

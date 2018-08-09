@@ -37,6 +37,7 @@ import {MatNativeDateModule} from '@angular/material';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import {CdkTableModule} from '@angular/cdk/table';
 import {CdkTreeModule} from '@angular/cdk/tree';
+import {MatTabsModule} from '@angular/material/tabs';
 
 @NgModule({
     imports: [
@@ -44,6 +45,7 @@ import {CdkTreeModule} from '@angular/cdk/tree';
         MatCheckboxModule,
         MatInputModule,
         MatSelectModule,
+        MatTabsModule,
         MatDatepickerModule,
         MatNativeDateModule,
         ReactiveFormsModule,
@@ -71,7 +73,7 @@ import {CdkTreeModule} from '@angular/cdk/tree';
         Registration3Component,
         Registration2Component,
         Preferences1Component,
-        Preferences2Component
+        Preferences2Component        
         ],
     providers: [
         AuthGuard,
