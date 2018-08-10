@@ -7,24 +7,28 @@ import { FinalDealsComponent } from './final-deals.component';
 import { ExclusiveComponent } from './exclusive.component';
 import { SettingsComponent } from './settings.component';
 import { HelpdeskComponent } from './helpdesk.component';
+import { BrandsComponent } from './brands.component';
+
 @NgModule({
-  imports: [
-    CommonModule,
-    pageRouting
-  ],
-  declarations: [
-    CategoriesComponent,
-    FinalDealsComponent,
-    ExclusiveComponent,
-    SettingsComponent,
-    HelpdeskComponent
+    imports: [
+      CommonModule,
+      pageRouting
+    ],
+    declarations: [
+      CategoriesComponent,
+      FinalDealsComponent,
+      ExclusiveComponent,
+      SettingsComponent,
+      HelpdeskComponent,
+      BrandsComponent
     ],
     exports:[
       CategoriesComponent,
-    FinalDealsComponent,
-    ExclusiveComponent,
-    SettingsComponent,
-    HelpdeskComponent
+      FinalDealsComponent,
+      ExclusiveComponent,
+      SettingsComponent,
+      HelpdeskComponent,
+      BrandsComponent
     ]
 })
 export class PagesModule { }

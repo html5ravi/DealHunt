@@ -12,6 +12,7 @@ import { Preferences1Component } from './preferences1/preferences1.component';
 import { Preferences2Component } from './preferences2/preferences2.component';
 import { CategoriesComponent } from './pages/categories.component';
 import { FinalDealsComponent } from './pages/final-deals.component';
+import { BrandsComponent } from './pages/brands.component';
 import { ExclusiveComponent } from './pages/exclusive.component';
 import { HelpdeskComponent } from './pages/helpdesk.component';
 import { SettingsComponent } from './pages/settings.component';
@@ -48,6 +49,10 @@ const appRoutes: Routes = [
             {
                 path:'helpdesk',
                 component:HelpdeskComponent
+            },
+            {
+                path:'brands',
+                component:BrandsComponent
             }
         ]
     },

@@ -2,7 +2,7 @@
 
 @Component({
     selector: 'body',
-    styleUrls:['app.css'],
+    styleUrls:['app.scss'],
     templateUrl: 'app.component.html'
 })
 
