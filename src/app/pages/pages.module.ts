@@ -9,11 +9,13 @@ import { SettingsComponent } from './settings.component';
 import { HelpdeskComponent } from './helpdesk.component';
 import { BrandsComponent } from './brands.component';
 import { BrandDetailsComponent } from './brandDetails.component';
+import { DragScrollModule } from 'ngx-drag-scroll';
 
 @NgModule({
     imports: [
       CommonModule,
-      pageRouting
+      pageRouting,
+      DragScrollModule
     ],
     declarations: [
       CategoriesComponent,

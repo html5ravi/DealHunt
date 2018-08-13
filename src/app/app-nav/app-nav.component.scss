@@ -14,9 +14,9 @@ mat-nav-list {
         font-size: 15px;
         color: #000;
         font-weight: 300;
-        i{
-            margin: 0 10px 0 0;
-            img{
+        i {
+            margin: 0 30px 0 0;
+            img {
                 width: 23px;
             }
         }
@@ -25,13 +25,14 @@ mat-nav-list {
 
 .sidenav-container {
     height: 100%;
-
     .mat-toolbar.mat-primary {
         position: sticky;
         top: 0;
         z-index: 1;
-        background: #417188; /* For browsers that do not support gradients */
-        background: linear-gradient(#417188, #375360); /* Standard syntax (must be last) */
+        background: #417188;
+        /* For browsers that do not support gradients */
+        background: linear-gradient(#417188, #375360);
+        /* Standard syntax (must be last) */
         .profileImg {
             height: 60px;
             margin-bottom: 15px;
@@ -57,8 +58,6 @@ mat-nav-list {
         align-items: baseline !important;
     }
 }
-
-
 
 .mat-toolbar-single-row {
     height: auto;

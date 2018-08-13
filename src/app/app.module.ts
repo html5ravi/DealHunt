@@ -59,7 +59,7 @@ import {MatTabsModule} from '@angular/material/tabs';
         MatSidenavModule,
         MatIconModule,
         MatListModule,
-        PagesModule
+        PagesModule        
         ],
     declarations: [
         AppComponent,

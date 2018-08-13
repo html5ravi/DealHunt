@@ -35,3 +35,40 @@
         text-transform: uppercase;
     }
 }
+
+.titleWithLink {
+    h2 {
+        font-size: 20px;
+        color: #888;
+        font-weight: 300;
+        margin-top: 10px;
+        text-transform: uppercase;
+    }
+    p {
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 1em;
+    }
+    a {
+        font-size: 12px;
+        font-weight: 300;
+        color: #375461;
+        float: right;
+        line-height: .8em;
+    }
+}
+
+drag-scroll {
+    height: 50px;
+    width: 100%;
+    // img {
+    //     height: 50px;
+    //     width: 50px;
+    // }
+    .brandsLogos {
+        width: 100px;
+        height: 80px;
+        border: 1px solid red;
+        text-align: center;
+    }
+}
