@@ -1,7 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 
-@import "app/app.scss";
 @import "~bootstrap/scss/functions";
+$grid-gutter-width: 12px !default;
+@import "app/app.scss";
 @import "~bootstrap/scss/variables";
 @import "~bootstrap/scss/mixins";
 // Import Roboot
@@ -334,12 +335,28 @@ header h1 {
     Brands Page
 */
 
-.page_brands {}
-
-.page_brands .col {
-    background: #fff;
-}
-
-.page_brands .col img {
-    width: 100%;
+.page_brands {
+    .row {
+        margin: 0 0 10px 0;
+    }
+    .brandCard {
+        background: #fff;
+        height: 140px;
+        text-align: center;
+        padding: 8px;
+        display: table-cell;
+        vertical-align: middle;
+        img {
+            width: 100%;
+        }
+        hr {
+            margin: 0;
+            padding: 0;
+        }
+        span {
+            font-size: 8px;
+            font-weight: 200;
+            color: #999;
+        }
+    }
 }
