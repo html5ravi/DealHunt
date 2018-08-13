@@ -192,6 +192,10 @@ header h1 {
     position: fixed;
     bottom: 0px;
     left: 0px;
+    background: #fff;
+    width: 100%;
+    overflow: auto !important;
+    display: inline-table !important;
 }
 
 .mat-tab-label .mat-tab-label-content {
@@ -233,14 +237,6 @@ header h1 {
     margin-bottom: 5px;
 }
 
-.mat-tab-label-container {
-    overflow: auto !important;
-    display: inline-table !important;
-}
-
-// .mat-tab-label-active {
-//     background: #22c064;
-// }
 .example-icon {
     padding: 0 14px;
 }
@@ -248,12 +244,6 @@ header h1 {
 .example-spacer {
     flex: 1 1 auto;
 }
-
-
-/*.mat-tab-body.mat-tab-body-active {
-    z-index: -1 !important;
-}*/
-
 
 /*
     Final Deals
@@ -322,7 +312,7 @@ header h1 {
 }
 
 .listOfOffers .btn {
-    idth: 100%;
+    width: 100%;
     font-size: 10px;
     border-radius: 0px;
     padding: 5px;
@@ -358,110 +348,111 @@ header h1 {
         }
     }
 }
-
-.tabOut .mat-tab-label-container {
-    width: 100%;
-}
-
-.tabOut .mat-tab-label-container .mat-tab-label {
-    width: 25%;
-    border-right: 1px solid #cecece;
-}
-
-.tabOut .mat-tab-label-container .mat-tab-label .icon1 {
-    background: url('assets/img/tabicon_hourglass.png') no-repeat;
-    background-position: center 10px;
-    background-size: 18px;
-    height: 60px;
-    width: 100%;
-}
-
-.tabOut .mat-tab-label-container .mat-tab-label .icon2 {
-    background: url('assets/img/tabicon_avatar.png') no-repeat;
-    background-position: center 10px;
-    background-size: 18px;
-    height: 60px;
-    width: 100%;
-}
-
-.tabOut .mat-tab-label-container .mat-tab-label .icon3 {
-    background: url('assets/img/tabicon_favorites.png') no-repeat;
-    background-position: center 10px;
-    background-size: 22px;
-    height: 60px;
-    width: 100%;
-}
-
-.tabOut .mat-tab-label-container .mat-tab-label .icon4 {
-    background: url('assets/img/tabicon_contract.png') no-repeat;
-    background-position: center 10px;
-    background-size: 20px;
-    height: 60px;
-    width: 100%;
-}
-
-.tabOut .mat-tab-label-container .mat-tab-label-active {
-    opacity: inherit;
-    color: #fff;
-}
-
-.tabOut .mat-tab-label-container .mat-tab-label-active .icon1 {
-    background: #375462 url('assets/img/tabicon_hourglass_active.png') no-repeat;
-    background-position: center 10px;
-    background-size: 18px;
-    height: 60px;
-    width: 100%;
-}
-
-.tabOut .mat-tab-label-container .mat-tab-label-active .icon2 {
-    background: #375462 url('assets/img/tabicon_avatar_active.png') no-repeat;
-    background-position: center 10px;
-    background-size: 18px;
-    height: 60px;
-    width: 100%;
-}
-
-.tabOut .mat-tab-label-container .mat-tab-label-active .icon3 {
-    background: #375462 url('assets/img/tabicon_favorites_active.png') no-repeat;
-    background-position: center 10px;
-    background-size: 22px;
-    height: 60px;
-    width: 100%;
-}
-
-.tabOut .mat-tab-label-container .mat-tab-label-active .icon4 {
-    background: #375462 url('assets/img/tabicon_contract_active.png') no-repeat;
-    background-position: center 10px;
-    background-size: 20px;
-    height: 60px;
-    width: 100%;
-}
-
-.tabOut .mat-tab-label-container .mat-tab-label .icon1 h6,
-.tabOut .mat-tab-label-container .mat-tab-label .icon2 h6,
-.tabOut .mat-tab-label-container .mat-tab-label .icon3 h6,
-.tabOut .mat-tab-label-container .mat-tab-label .icon4 h6 {
-    font-size: 11px;
-    padding: 40px 0 0 0;
-    margin: 0;
-    font-weight: normal;
-}
-
-.tabOut .mat-tab-group.mat-primary .mat-ink-bar,
-.tabOut .mat-tab-nav-bar.mat-primary .mat-ink-bar {
-    background-color: #375462;
-    width: 24.8% !important;
-}
-
-.tabOut .mat-tab-label-content {
-    width: 100%;
-}
+/*
+================ Bottom tab styles ===============*/
+.tabOut{
+    .mat-tab-label-container {
+        width: 100%;
+        .mat-tab-label {
+            width: 25%;
+            border-right: 1px solid #cecece;
+            .icon1 {
+                background: url('assets/img/tabicon_hourglass.png') no-repeat;
+                background-position: center 10px;
+                background-size: 18px;
+                height: 60px;
+                width: 100%;
+                h6{
+                    font-size: 11px;
+                    padding: 40px 0 0 0;
+                    margin: 0;
+                    font-weight: normal;
+                }
+            }
+            .icon2 {
+                background: url('assets/img/tabicon_avatar.png') no-repeat;
+                background-position: center 10px;
+                background-size: 18px;
+                height: 60px;
+                width: 100%;
+                h6{
+                    font-size: 11px;
+                    padding: 40px 0 0 0;
+                    margin: 0;
+                    font-weight: normal;
+                }
+            }
+            .icon3 {
+                background: url('assets/img/tabicon_favorites.png') no-repeat;
+                background-position: center 10px;
+                background-size: 22px;
+                height: 60px;
+                width: 100%;
+                h6{
+                    font-size: 11px;
+                    padding: 40px 0 0 0;
+                    margin: 0;
+                    font-weight: normal;
+                }
+            }
+            .icon4 {
+                background: url('assets/img/tabicon_contract.png') no-repeat;
+                background-position: center 10px;
+                background-size: 20px;
+                height: 60px;
+                width: 100%;
+                h6{
+                    font-size: 11px;
+                    padding: 40px 0 0 0;
+                    margin: 0;
+                    font-weight: normal;
+                }
+            }
+        }
+        .mat-tab-label-active {
+            opacity: inherit;
+            color: #fff;
+            .icon1 {
+                background: #375462 url('assets/img/tabicon_hourglass_active.png') no-repeat;
+                background-position: center 10px;
+                background-size: 18px;
+                height: 60px;
+                width: 100%;
+            }
+            .icon2 {
+                background: #375462 url('assets/img/tabicon_avatar_active.png') no-repeat;
+                background-position: center 10px;
+                background-size: 18px;
+                height: 60px;
+                width: 100%;
+            }
+            .icon3 {
+                background: #375462 url('assets/img/tabicon_favorites_active.png') no-repeat;
+                background-position: center 10px;
+                background-size: 22px;
+                height: 60px;
+                width: 100%;
+            }
+            .icon4 {
+                background: #375462 url('assets/img/tabicon_contract_active.png') no-repeat;
+                background-position: center 10px;
+                background-size: 20px;
+                height: 60px;
+                width: 100%;
+            }
+        }
+    }
+    .mat-tab-group.mat-primary, .mat-tab-nav-bar.mat-primary{
+        .mat-ink-bar{
+            background-color: #375462;
+            width: 24.8% !important;
+        }
+    }
+    .mat-tab-label-content {
+        width: 100%;
+    }
+} 
 
 .mat-tab-body.mat-tab-body-active {
     z-index: 0 !important;
-}
-
-.mat-tab-label-container {
-    background: #fff;
-    width: 100%;
 }

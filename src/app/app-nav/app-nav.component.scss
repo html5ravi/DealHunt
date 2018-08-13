@@ -14,6 +14,12 @@ mat-nav-list {
         font-size: 15px;
         color: #000;
         font-weight: 300;
+        i{
+            margin: 0 10px 0 0;
+            img{
+                width: 23px;
+            }
+        }
     }
 }
 
