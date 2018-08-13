@@ -1,12 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 
-@import "~bootstrap/scss/functions";
-$grid-gutter-width: 12px !default;
+@import "assets/scss/bootstrap";
 @import "app/app.scss";
-@import "~bootstrap/scss/variables";
-@import "~bootstrap/scss/mixins";
-// Import Roboot
-@import "~bootstrap/scss/reboot";
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900');
 html,
 body {
