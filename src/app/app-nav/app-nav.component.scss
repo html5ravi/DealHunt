@@ -19,6 +19,29 @@ mat-nav-list {
 
 .sidenav-container {
     height: 100%;
+
+    .mat-toolbar.mat-primary {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        background: #417188; /* For browsers that do not support gradients */
+        background: linear-gradient(#417188, #375360); /* Standard syntax (must be last) */
+        .profileImg {
+            height: 60px;
+            margin-bottom: 15px;
+            width: 60px;
+            margin-top: 20px;
+            border: 1px solid gray;
+            border-radius: 50%;
+            overflow: hidden;
+            background: #f00;
+        }
+        .profileDetail {
+            text-transform: uppercase;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+    }
 }
 
 .sidenav {
@@ -29,25 +52,7 @@ mat-nav-list {
     }
 }
 
-.mat-toolbar.mat-primary {
-    position: sticky;
-    top: 0;
-    .profileImg {
-        height: 60px;
-        margin-bottom: 15px;
-        width: 60px;
-        margin-top: 20px;
-        border: 1px solid gray;
-        border-radius: 50%;
-        overflow: hidden;
-        background: #f00;
-    }
-    .profileDetail {
-        text-transform: uppercase;
-        font-size: 16px;
-        margin-bottom: 20px;
-    }
-}
+
 
 .mat-toolbar-single-row {
     height: auto;
