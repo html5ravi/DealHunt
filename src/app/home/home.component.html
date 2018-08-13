@@ -10,30 +10,36 @@
 <p><a [routerLink]="['/login']">Logout</a></p>-->
 
 
-<mat-tab-group headerPosition="below" disableRipple="true">
-    <mat-tab>
-        <ng-template mat-tab-label>
-            <img src="../assets/img/tabicon_hourglass.png" class="icon">
-            <div> Final Deals</div>
-        </ng-template>
-        <app-final-deals></app-final-deals>
-    </mat-tab>
-    <mat-tab> Content 2
-        <ng-template mat-tab-label>
-            <img src="../assets/img/tabicon_avatar.png" class="icon">
-            <div> My Account</div>
-        </ng-template>
-    </mat-tab>
-    <mat-tab> Content 3
-        <ng-template mat-tab-label>
-            <img src="../assets/img/tabicon_favorites.png" class="icon">
-            <div> DH Exclusive</div>
-        </ng-template>
-    </mat-tab>
-    <mat-tab> Content 3
-        <ng-template mat-tab-label>
-            <img src="../assets/img/tabicon_contract.png" class="icon">
-            <div> List Your Offer</div>
-        </ng-template>
-    </mat-tab>
-</mat-tab-group>
+<div class="tabOut">
+    <mat-tab-group headerPosition="below" disableRipple="true">
+        <mat-tab>Content 1
+            <ng-template mat-tab-label>
+                <div class="icon1">
+                    <h6>Final Deals</h6>
+                </div>
+            </ng-template>
+            <app-final-deals></app-final-deals>
+        </mat-tab>
+        <mat-tab> Content 2
+            <ng-template mat-tab-label>
+                <div class="icon2">
+                    <h6>My Account</h6>
+                </div>
+            </ng-template>
+        </mat-tab>
+        <mat-tab> Content 3
+            <ng-template mat-tab-label>
+                <div class="icon3">
+                    <h6>DH Exclusive</h6>
+                </div>
+            </ng-template>
+        </mat-tab>
+        <mat-tab> Content 4
+            <ng-template mat-tab-label>
+                <div class="icon4">
+                    <h6>List Your Offer</h6>
+                </div>
+            </ng-template>
+        </mat-tab>
+    </mat-tab-group>
+</div>
