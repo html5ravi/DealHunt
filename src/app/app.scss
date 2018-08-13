@@ -1,1 +1,37 @@
-$grid-gutter-width: 12px !default;
+.brandDetail {
+    padding-bottom: 20px;
+    .banner {
+        height: auto;
+        margin: 10px 0 20px 0;
+        img {
+            width: 100%;
+        }
+    }
+    .title {
+        font-size: 18px;
+        color: #666;
+        font-weight: 500;
+        span {
+            display: block;
+            font-size: 14px;
+            font-weight: 300;
+            margin: 5px 0;
+        }
+    }
+    .list {
+        margin: 20px 0 0 0;
+        padding: 0;
+        li {
+            list-style-type: square;
+            margin: 0 0 10px 16px;
+            padding: 0;
+            font-style: italic;
+            font-size: 14px;
+            color: #888;
+            font-weight: 300;
+        }
+    }
+    .btn {
+        text-transform: uppercase;
+    }
+}

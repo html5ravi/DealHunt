@@ -8,6 +8,7 @@ import { ExclusiveComponent } from './exclusive.component';
 import { SettingsComponent } from './settings.component';
 import { HelpdeskComponent } from './helpdesk.component';
 import { BrandsComponent } from './brands.component';
+import { BrandDetailsComponent } from './brandDetails.component';
 
 @NgModule({
     imports: [
@@ -20,8 +21,9 @@ import { BrandsComponent } from './brands.component';
       ExclusiveComponent,
       SettingsComponent,
       HelpdeskComponent,
-      BrandsComponent
-    ],
+      BrandsComponent,
+    BrandDetailsComponent
+],
     exports:[
       CategoriesComponent,
       FinalDealsComponent,

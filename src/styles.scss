@@ -73,6 +73,10 @@ input:focus {
     Common css
 */
 
+.btn {
+    border-radius: 0px;
+}
+
 input::-webkit-input-placeholder {
     /* Chrome/Opera/Safari */
     color: pink;
