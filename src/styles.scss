@@ -241,7 +241,6 @@ header h1 {
 // .mat-tab-label-active {
 //     background: #22c064;
 // }
-
 .example-icon {
     padding: 0 14px;
 }
@@ -249,6 +248,8 @@ header h1 {
 .example-spacer {
     flex: 1 1 auto;
 }
+
+
 /*.mat-tab-body.mat-tab-body-active {
     z-index: -1 !important;
 }*/
@@ -332,7 +333,6 @@ header h1 {
     Brands Page
 */
 
-<<<<<<< HEAD
 .page_brands {
     .row {
         margin: 0 0 10px 0;
@@ -358,27 +358,17 @@ header h1 {
         }
     }
 }
-=======
-.page_brands {}
 
-.page_brands .col {
-    background: #fff;
-}
-
-.page_brands .col img {
+.tabOut .mat-tab-label-container {
     width: 100%;
 }
 
-
-.tabOut .mat-tab-label-container{
-    width: 100%;
-}
-
-.tabOut .mat-tab-label-container .mat-tab-label{
+.tabOut .mat-tab-label-container .mat-tab-label {
     width: 25%;
     border-right: 1px solid #cecece;
 }
-.tabOut .mat-tab-label-container .mat-tab-label .icon1{
+
+.tabOut .mat-tab-label-container .mat-tab-label .icon1 {
     background: url('assets/img/tabicon_hourglass.png') no-repeat;
     background-position: center 10px;
     background-size: 18px;
@@ -386,7 +376,7 @@ header h1 {
     width: 100%;
 }
 
-.tabOut .mat-tab-label-container .mat-tab-label .icon2{
+.tabOut .mat-tab-label-container .mat-tab-label .icon2 {
     background: url('assets/img/tabicon_avatar.png') no-repeat;
     background-position: center 10px;
     background-size: 18px;
@@ -394,7 +384,7 @@ header h1 {
     width: 100%;
 }
 
-.tabOut .mat-tab-label-container .mat-tab-label .icon3{
+.tabOut .mat-tab-label-container .mat-tab-label .icon3 {
     background: url('assets/img/tabicon_favorites.png') no-repeat;
     background-position: center 10px;
     background-size: 22px;
@@ -402,7 +392,7 @@ header h1 {
     width: 100%;
 }
 
-.tabOut .mat-tab-label-container .mat-tab-label .icon4{
+.tabOut .mat-tab-label-container .mat-tab-label .icon4 {
     background: url('assets/img/tabicon_contract.png') no-repeat;
     background-position: center 10px;
     background-size: 20px;
@@ -410,33 +400,36 @@ header h1 {
     width: 100%;
 }
 
-
-.tabOut .mat-tab-label-container .mat-tab-label-active{
+.tabOut .mat-tab-label-container .mat-tab-label-active {
     opacity: inherit;
     color: #fff;
 }
-.tabOut .mat-tab-label-container .mat-tab-label-active .icon1{
+
+.tabOut .mat-tab-label-container .mat-tab-label-active .icon1 {
     background: #375462 url('assets/img/tabicon_hourglass_active.png') no-repeat;
     background-position: center 10px;
     background-size: 18px;
     height: 60px;
     width: 100%;
 }
-.tabOut .mat-tab-label-container .mat-tab-label-active .icon2{
+
+.tabOut .mat-tab-label-container .mat-tab-label-active .icon2 {
     background: #375462 url('assets/img/tabicon_avatar_active.png') no-repeat;
     background-position: center 10px;
     background-size: 18px;
     height: 60px;
     width: 100%;
 }
-.tabOut .mat-tab-label-container .mat-tab-label-active .icon3{
+
+.tabOut .mat-tab-label-container .mat-tab-label-active .icon3 {
     background: #375462 url('assets/img/tabicon_favorites_active.png') no-repeat;
     background-position: center 10px;
     background-size: 22px;
     height: 60px;
     width: 100%;
 }
-.tabOut .mat-tab-label-container .mat-tab-label-active .icon4{
+
+.tabOut .mat-tab-label-container .mat-tab-label-active .icon4 {
     background: #375462 url('assets/img/tabicon_contract_active.png') no-repeat;
     background-position: center 10px;
     background-size: 20px;
@@ -444,31 +437,31 @@ header h1 {
     width: 100%;
 }
 
-.tabOut .mat-tab-label-container .mat-tab-label .icon1 h6, 
-.tabOut .mat-tab-label-container .mat-tab-label .icon2 h6, 
-.tabOut .mat-tab-label-container .mat-tab-label .icon3 h6, 
-.tabOut .mat-tab-label-container .mat-tab-label .icon4 h6{
+.tabOut .mat-tab-label-container .mat-tab-label .icon1 h6,
+.tabOut .mat-tab-label-container .mat-tab-label .icon2 h6,
+.tabOut .mat-tab-label-container .mat-tab-label .icon3 h6,
+.tabOut .mat-tab-label-container .mat-tab-label .icon4 h6 {
     font-size: 11px;
     padding: 40px 0 0 0;
     margin: 0;
     font-weight: normal;
 }
-.tabOut .mat-tab-group.mat-primary .mat-ink-bar, .tabOut .mat-tab-nav-bar.mat-primary .mat-ink-bar {
+
+.tabOut .mat-tab-group.mat-primary .mat-ink-bar,
+.tabOut .mat-tab-nav-bar.mat-primary .mat-ink-bar {
     background-color: #375462;
     width: 24.8% !important;
 }
 
-
-.tabOut  .mat-tab-label-content{
+.tabOut .mat-tab-label-content {
     width: 100%;
 }
 
-.mat-tab-body.mat-tab-body-active{
+.mat-tab-body.mat-tab-body-active {
     z-index: 0 !important;
 }
-.mat-tab-label-container{
+
+.mat-tab-label-container {
     background: #fff;
     width: 100%;
 }
-
->>>>>>> bottom-tab-UI
