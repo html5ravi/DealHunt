@@ -10,6 +10,7 @@ import { HelpdeskComponent } from './helpdesk.component';
 import { BrandsComponent } from './brands.component';
 import { BrandDetailsComponent } from './brandDetails.component';
 import { DragScrollModule } from 'ngx-drag-scroll';
+import { ListOfOffersComponent } from './listOfOffers.component';
 
 @NgModule({
     imports: [
@@ -24,7 +25,8 @@ import { DragScrollModule } from 'ngx-drag-scroll';
       SettingsComponent,
       HelpdeskComponent,
       BrandsComponent,
-    BrandDetailsComponent
+      BrandDetailsComponent,
+      ListOfOffersComponent
 ],
     exports:[
       CategoriesComponent,
@@ -32,7 +34,8 @@ import { DragScrollModule } from 'ngx-drag-scroll';
       ExclusiveComponent,
       SettingsComponent,
       HelpdeskComponent,
-      BrandsComponent
+      BrandsComponent,
+      ListOfOffersComponent
     ]
 })
 export class PagesModule { }

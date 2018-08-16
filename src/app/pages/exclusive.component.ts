@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { DragScrollModule } from 'ngx-drag-scroll';
+// import { DragScrollModule } from 'ngx-drag-scroll';
 
 // declare var $: any;
 // declare var jQuery: any;

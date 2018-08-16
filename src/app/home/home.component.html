@@ -18,7 +18,7 @@
                     <h6>Final Deals</h6>
                 </div>
             </ng-template>
-            <app-final-deals></app-final-deals>
+            <app-final-deals>Loading...</app-final-deals>
         </mat-tab>
         <mat-tab> Content 2
             <ng-template mat-tab-label>
@@ -27,14 +27,16 @@
                 </div>
             </ng-template>
         </mat-tab>
-        <mat-tab> Content 3
+        <mat-tab>
+            <app-exclusive>Loading...</app-exclusive>
             <ng-template mat-tab-label>
                 <div class="icon3">
                     <h6>DH Exclusive</h6>
                 </div>
             </ng-template>
         </mat-tab>
-        <mat-tab> Content 4
+        <mat-tab>
+            <app-listofoffers></app-listofoffers>
             <ng-template mat-tab-label>
                 <div class="icon4">
                     <h6>List Your Offer</h6>
