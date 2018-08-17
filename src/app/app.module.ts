@@ -39,6 +39,7 @@ import {CdkTableModule} from '@angular/cdk/table';
 import {CdkTreeModule} from '@angular/cdk/tree';
 import {MatTabsModule} from '@angular/material/tabs';
 import { DragScrollModule } from 'ngx-drag-scroll';
+import { ApiService } from './_services/api.service';
 @NgModule({
     imports: [
         BrowserModule,
@@ -79,6 +80,7 @@ import { DragScrollModule } from 'ngx-drag-scroll';
     providers: [
         AuthGuard,
         AlertService,
+        ApiService,
         AuthenticationService,
         UserService,
         { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
