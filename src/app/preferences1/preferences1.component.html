@@ -2,22 +2,12 @@
   <h1>your reperence</h1>
 </header>
 <ul class="categories">
-  <li class="active">
-    <i class="restaurants"></i>
-    <h5>restaurants</h5>
-  </li>
-  <li>
-    <i class="fashion"></i>
-    <h5>fashion</h5>
-  </li>
-  <li>
-    <i class="electronics"></i>
-    <h5>electronics</h5>
-  </li>
-  <li>
-    <i class="beauty"></i>
-    <h5>beauty</h5>
+  <li class="active" *ngFor="let item of categories">
+    <a href [routerLink]="['/preferences2', item.title]">
+      <i><img src="{{item.categoryicon}}" /></i>
+      <h5>{{item.title}}</h5>
+    </a>
   </li>
   <div style="clear:both;"></div>
 </ul>
-<a href="" class="nextBtn">Next</a>
+<a href [routerLink]="['/preferences2']" class="nextBtn">Next</a>

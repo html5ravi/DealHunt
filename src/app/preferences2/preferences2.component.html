@@ -2,28 +2,10 @@
   <h1>your reperence</h1>
 </header>
 <ul class="listItems">
-  <li>
-    <mat-checkbox>Quick service restaurant</mat-checkbox>
-  </li>
-  <li>
-      <mat-checkbox>fast food</mat-checkbox>
-  </li>
-  <li>
-    <mat-checkbox>fine dining</mat-checkbox>
-  </li>
-  <li>
-    <mat-checkbox>home delivery</mat-checkbox>
-  </li>
-  <li>
-    <mat-checkbox>food combos</mat-checkbox>
-  </li>
-  <li>
-    <mat-checkbox>home delivery</mat-checkbox>
-  </li>
-  <li>
-    <mat-checkbox>coffee and tea</mat-checkbox>
-  </li>
+  <li *ngFor="let item of subCategories">
+    <mat-checkbox>{{item.subtitle}}</mat-checkbox>
+  </li> 
 </ul>
 
 
-<a href="" class="nextBtn">Next</a>
+<a href [routerLink]="['/home']" class="nextBtn">Next</a>

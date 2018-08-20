@@ -8,14 +8,14 @@
 
 
     <div class="row align-items-center">
-        <div class="col">
+        <div class="col" *ngFor="let item of brands">
             <div class="brandCard" (click)="goToDetailPage()">
-                <img src="../../assets/img/brands/red-chief.png" alt="">
+                <img src="{{item.brandlogo}}" alt="">
                 <hr>
-                <span>5 Exciting deals >></span>
+                <span>{{item.name}}</span>
             </div>
         </div>
-        <div class="col ">
+        <!-- <div class="col ">
             <div class="brandCard" (click)="goToDetailPage()">
                 <img src="../../assets/img/brands/max.png" alt="">
                 <hr>
@@ -51,7 +51,7 @@
                 <hr>
                 <span>5 Exciting deals >></span>
             </div>
-        </div>
+        </div> -->
     </div>
 
 </section>
