@@ -2,12 +2,40 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { pageRouting } from './page.routing';
 import { CategoriesComponent } from './categories.component';
-import { HomeComponent } from '../home/home.component';
+// import { HomeComponent } from '../home/home.component';
+import { FinalDealsComponent } from './final-deals.component';
+import { ExclusiveComponent } from './exclusive.component';
+import { SettingsComponent } from './settings.component';
+import { HelpdeskComponent } from './helpdesk.component';
+import { BrandsComponent } from './brands.component';
+import { BrandDetailsComponent } from './brandDetails.component';
+import { DragScrollModule } from 'ngx-drag-scroll';
+import { ListOfOffersComponent } from './listOfOffers.component';
+
 @NgModule({
-  imports: [
-    CommonModule,
-    pageRouting
-  ],
-  declarations: [CategoriesComponent, HomeComponent]
+    imports: [
+      CommonModule,
+      pageRouting,
+      DragScrollModule
+    ],
+    declarations: [
+      CategoriesComponent,
+      FinalDealsComponent,
+      ExclusiveComponent,
+      SettingsComponent,
+      HelpdeskComponent,
+      BrandsComponent,
+      BrandDetailsComponent,
+      ListOfOffersComponent
+],
+    exports:[
+      CategoriesComponent,
+      FinalDealsComponent,
+      ExclusiveComponent,
+      SettingsComponent,
+      HelpdeskComponent,
+      BrandsComponent,
+      ListOfOffersComponent
+    ]
 })
 export class PagesModule { }

@@ -1,6 +1,6 @@
 ﻿<div class="loginPage">
     <section class="cont">
-        <img src="../../../assets/img/logo.png" alt="">
+        <img src=".././assets/img/logo.png" alt="">
     </section>
     <p>Welcome to our Dealhunt, please register to join & grab great deals</p>
 
@@ -14,7 +14,7 @@
             </div>
         </div>
         <div class="form-group">
-            <input type="password" placeholder="Enter your Email ID" formControlName="password" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.password.errors }" />
+            <input type="password" placeholder="Enter your password" formControlName="password" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.password.errors }" />
             <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
                 <div *ngIf="f.password.errors.required">Email ID is required</div>
             </div>
@@ -34,5 +34,6 @@
             <!--<a [routerLink]="['/register']" class="btn btn-link">Register</a>-->
         </div>
     </form>
-    <button class="btn custom" (click)="gotoRegister()">Next</button>
+    <!--<button class="btn custom" (click)="gotoRegister()">Next</button>-->
+    <a class="btn btn-link" [routerLink]="['/register']">Register</a>
 </div>

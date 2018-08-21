@@ -1,0 +1,212 @@
+.loginPage,
+.registerPage {
+    text-align: center;
+    padding: 16px;
+}
+
+.brandDetail {
+    padding-bottom: 20px;
+    .banner {
+        height: auto;
+        margin: 10px 0 20px 0;
+        img {
+            width: 100%;
+        }
+    }
+    .title {
+        font-size: 18px;
+        color: #666;
+        font-weight: 500;
+        span {
+            display: block;
+            font-size: 14px;
+            font-weight: 300;
+            margin: 5px 0;
+        }
+    }
+    .list {
+        margin: 20px 0 0 0;
+        padding: 0;
+        li {
+            list-style-type: square;
+            margin: 0 0 10px 16px;
+            padding: 0;
+            font-style: italic;
+            font-size: 14px;
+            color: #888;
+            font-weight: 300;
+        }
+    }
+    .btn {
+        text-transform: uppercase;
+    }
+}
+
+.titleWithLink {
+    h2 {
+        font-size: 20px;
+        color: #888;
+        font-weight: 300;
+        margin-top: 10px;
+        text-transform: uppercase;
+    }
+    p {
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 1em;
+    }
+    a {
+        font-size: 12px;
+        font-weight: 300;
+        color: #375461;
+        float: right;
+        line-height: .8em;
+    }
+}
+
+drag-scroll {
+    height: auto;
+    width: 100%;
+    margin-bottom: 20px;
+    // img {
+    //     height: 50px;
+    //     width: 50px;
+    // }
+    .drag-scroll-content {
+        height: 90px !important;
+    }
+    .brandsLogos {
+        width: auto;
+        height: 80px;
+        // border: 1px solid red;
+        text-align: center;
+        display: inline-block;
+        margin: 0 10px 0 0;
+        background: #fff;
+        border-radius: 10px;
+        padding: 15px;
+        box-shadow: 2px 2px 10px #ccc;
+        img {
+            height: 100%;
+        }
+    }
+}
+
+
+/*
+    Offers Page
+*/
+
+.offerspage {
+    font-family: 'Source Sans Pro', sans-serif;
+    background: #f5f6f8;
+    padding-bottom: 0;
+    .btn {
+        text-transform: uppercase;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        text-align: left;
+        &:first-child {
+            margin-right: 3px;
+        }
+        span {
+            font-size: 12px;
+        }
+    }
+    .btnGroup {
+        .btn {
+            background: #fff;
+            border-radius: 3px;
+        }
+    }
+    .btn-group {
+        .btn {
+            text-transform: uppercase;
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            text-align: left;
+            background: #fff;
+            &:first-child {
+                margin-right: 3px;
+            }
+            span {
+                font-size: 12px;
+            }
+        }
+    }
+    .row {
+        margin-bottom: 10px;
+        &:first-child {
+            margin-top: 10px;
+        }
+    }
+    .banners {
+        width: 100%;
+    }
+    .map {
+        height: 250px;
+        width: 100%;
+        background: #ccc;
+    }
+}
+
+
+/*
+    ====== Categories page ==========*/
+
+.categories {
+    margin: 5% auto 0 auto;
+    padding: 0;
+    width: 325px;
+    text-align: center;
+    li {
+        margin: 0;
+        padding: 10px;
+        list-style: none;
+        float: left;
+        width: 50%;
+        height: 130px;
+        i {
+            display: block
+        }
+        h5 {
+            margin: 10px 0 0 0;
+            padding: 0;
+            font-size: 15px;
+            text-transform: uppercase;
+            color: #aaaaaa;
+        }
+    }
+}
+
+.searchOut {
+    margin: 20px 0 0 0;
+    width: 100%;
+    input[type="text"] {
+        width: 100%;
+        border-radius: 25px;
+        border: 1px solid #ccc;
+        line-height: 30px;
+        padding: 0 0 0 20px;
+    }
+    input::-moz-placeholder {
+        color: #aaaaaa;
+        font-size: 13px;
+        font-weight: normal;
+        text-align: left;
+    }
+    input::-webkit-input-placeholder {
+        color: #aaaaaa;
+        font-size: 13px;
+        font-weight: normal;
+        text-align: left;
+    }
+    input:-ms-input-placeholder {
+        color: #aaaaaa;
+        font-size: 13px;
+        font-weight: normal;
+        text-align: left;
+    }
+}

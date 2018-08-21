@@ -37,13 +37,17 @@ import {MatNativeDateModule} from '@angular/material';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import {CdkTableModule} from '@angular/cdk/table';
 import {CdkTreeModule} from '@angular/cdk/tree';
-
+import {MatTabsModule} from '@angular/material/tabs';
+import { DragScrollModule } from 'ngx-drag-scroll';
+import { ApiService } from './_services/api.service';
 @NgModule({
     imports: [
         BrowserModule,
+        DragScrollModule,
         MatCheckboxModule,
         MatInputModule,
         MatSelectModule,
+        MatTabsModule,
         MatDatepickerModule,
         MatNativeDateModule,
         ReactiveFormsModule,
@@ -57,7 +61,7 @@ import {CdkTreeModule} from '@angular/cdk/tree';
         MatSidenavModule,
         MatIconModule,
         MatListModule,
-        PagesModule
+        PagesModule        
         ],
     declarations: [
         AppComponent,
@@ -70,12 +74,13 @@ import {CdkTreeModule} from '@angular/cdk/tree';
         SignupComponent,
         Registration3Component,
         Registration2Component,
-        Preferences1Component ,
-        Preferences2Component
+        Preferences1Component,
+        Preferences2Component        
         ],
     providers: [
         AuthGuard,
         AlertService,
+        ApiService,
         AuthenticationService,
         UserService,
         { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },

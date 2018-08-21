@@ -1,0 +1,57 @@
+<section class="page_brands">
+    <div class="headsection">
+        <img src="./assets/img/thumb_paper-plane.png" alt="">
+        <h3>Brands
+            <span>TOP BRANDS WITH EXCITING OFFERS!</span>
+        </h3>
+    </div>
+
+
+    <div class="row align-items-center">
+        <div class="col" *ngFor="let item of brands">
+            <div class="brandCard" (click)="goToDetailPage()">
+                <img src="{{item.brandlogo}}" alt="">
+                <hr>
+                <span>{{item.name}}</span>
+            </div>
+        </div>
+        <!-- <div class="col ">
+            <div class="brandCard" (click)="goToDetailPage()">
+                <img src="./assets/img/brands/max.png" alt="">
+                <hr>
+                <span>5 Exciting deals >></span>
+            </div>
+        </div>
+        <div class="col">
+            <div class="brandCard" (click)="goToDetailPage()">
+                <img src="./assets/img/brands/myntra.png" alt="">
+                <hr>
+                <span>5 Exciting deals >></span>
+            </div>
+        </div>
+    </div>
+    <div class="row align-items-center">
+        <div class="col">
+            <div class="brandCard" (click)="goToDetailPage()">
+                <img src="./assets/img/brands/abof.png" alt="">
+                <hr>
+                <span>5 Exciting deals >></span>
+            </div>
+        </div>
+        <div class="col ">
+            <div class="brandCard" (click)="goToDetailPage()">
+                <img src="./assets/img/brands/amazon.png" alt="">
+                <hr>
+                <span>5 Exciting deals >></span>
+            </div>
+        </div>
+        <div class="col">
+            <div class="brandCard" (click)="goToDetailPage()">
+                <img src="./assets/img/brands/flipkart.png" alt="">
+                <hr>
+                <span>5 Exciting deals >></span>
+            </div>
+        </div> -->
+    </div>
+
+</section>

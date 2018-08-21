@@ -11,6 +11,12 @@ import { SignupComponent } from './signup/signup.component';
 import { Preferences1Component } from './preferences1/preferences1.component';
 import { Preferences2Component } from './preferences2/preferences2.component';
 import { CategoriesComponent } from './pages/categories.component';
+import { FinalDealsComponent } from './pages/final-deals.component';
+import { BrandsComponent } from './pages/brands.component';
+import { ExclusiveComponent } from './pages/exclusive.component';
+import { HelpdeskComponent } from './pages/helpdesk.component';
+import { SettingsComponent } from './pages/settings.component';
+import { BrandDetailsComponent } from './pages/brandDetails.component';
 const appRoutes: Routes = [
     {   path: '', 
         canActivate: [AuthGuard], 
@@ -28,6 +34,30 @@ const appRoutes: Routes = [
             {
                 path:'categories',
                 component:CategoriesComponent
+            },
+            {
+                path:'finaldeals',
+                component:FinalDealsComponent
+            },
+            {
+                path:'exclusive',
+                component:ExclusiveComponent
+            },
+            {
+                path:'settings',
+                component:SettingsComponent
+            },
+            {
+                path:'helpdesk',
+                component:HelpdeskComponent
+            },
+            {
+                path:'brands',
+                component:BrandsComponent
+            },
+            {
+                path:'brand-detail',
+                component:BrandDetailsComponent
             }
         ]
     },
@@ -37,7 +67,7 @@ const appRoutes: Routes = [
     { path: 'register3', component: Registration3Component },
     { path: 'signup', component: SignupComponent },
     { path: 'preferences1', component: Preferences1Component },
-    { path: 'preferences2', component: Preferences2Component },
+    { path: 'preferences2/:title', component: Preferences2Component },
     // otherwise redirect to home
     { path: '**', redirectTo: '' }
 ];

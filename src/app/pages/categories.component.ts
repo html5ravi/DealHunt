@@ -1,12 +1,22 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { ApiService } from '../_services/api.service';
 
 @Component({
   selector: 'app-categories',
-  templateUrl: './categories.component.html'
+  templateUrl: './categories.component.html',
 })
 export class CategoriesComponent implements OnInit {
+  public categories: any;
+  constructor(public http:HttpClient, public api: ApiService) {
 
-  constructor() { }
+    this.api.getAll("categories?orderby_asc=title").subscribe(
+      res=>{
+        this.categories = res.data;
+      }
+    )
+
+   }
 
   ngOnInit() {
   }

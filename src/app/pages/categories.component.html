@@ -1,3 +1,20 @@
-<p>
-  categories works!
-</p>
+<div class="searchOut">
+  <!-- <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <mat-toolbar-row>
+        <mat-icon>search</mat-icon>
+      </mat-toolbar-row>
+    </mat-toolbar>
+  </mat-sidenav-content> -->
+  <input type="text" placeholder="Search Category" />
+</div>
+
+<ul class="categories">
+  <li class="active" *ngFor="let item of categories">
+    <a href [routerLink]="['/preferences2', item.title]">
+      <i><img src="{{item.categoryicon}}" /></i>
+      <h5>{{item.title}}</h5>
+    </a>
+  </li>
+  <div style="clear:both;"></div>
+</ul>

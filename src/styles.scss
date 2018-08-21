@@ -1,0 +1,539 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "assets/scss/bootstrap";
+@import "app/app.scss";
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900');
+html,
+body {
+    height: 100%;
+}
+
+button:focus {
+    outline: none !important;
+}
+
+body {
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.loginPage p {
+    font-size: 15px;
+    text-align: center;
+}
+
+.loginPage .form-control {
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0px;
+    text-align: center;
+}
+
+.cont {
+    height: 310px;
+    background-image: url("assets/img/register_bg.png");
+    background-origin: content-box;
+    background-position: top center;
+    margin: 10px 0px;
+    text-align: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.cont img {
+    height: 60px;
+    background: #fff;
+    padding: 10px;
+    margin-top: 40%;
+    box-shadow: 3px 3px 10px #666;
+}
+
+.btn.custom {
+    width: 100%;
+    background: #375258;
+    line-height: 17px;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 300;
+    border-radius: 15px;
+}
+
+input::placeholder {
+    font-style: italic;
+    text-align: center
+}
+
+input:focus {
+    outline: none;
+    border: 0;
+}
+
+
+/**
+    Common css
+*/
+
+.btn {
+    border-radius: 0px;
+}
+
+input::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: pink;
+}
+
+input::-moz-placeholder {
+    /* Firefox 19+ */
+    color: pink;
+}
+
+input:-ms-input-placeholder {
+    /* IE 10+ */
+    color: pink;
+}
+
+input:-moz-placeholder {
+    /* Firefox 18- */
+    color: pink;
+}
+
+
+/*
+================ General styles =============*/
+
+header {
+    border-bottom: 2px solid #dadada;
+    padding: 12px;
+}
+
+header h1 {
+    color: #333333;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 20px;
+    margin: 0;
+    font-weight: normal;
+}
+
+.nextBtn {
+    background: linear-gradient(#486776, #375360);
+    width: 90%;
+    margin: 30px auto 0 auto;
+    display: block;
+    border-radius: 25px;
+    text-align: center;
+    padding: 5px;
+    color: #fff;
+}
+
+.nextBtn:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.mat-icon-button {
+    margin-left: -10px !important;
+}
+.clear{
+    clear: both;
+}
+
+/*
+======================= mat checkbox custom styles ============================*/
+
+.listItems li .mat-checkbox-layout {
+    margin: 0;
+}
+
+.listItems li .mat-checkbox-layout .mat-checkbox-background,
+.listItems li .mat-checkbox-layout .mat-checkbox-frame {
+    border-radius: 50% !important;
+    border-width: 1px !important;
+}
+
+.listItems li .mat-checkbox-inner-container {
+    position: absolute !important;
+    right: 0 !important;
+}
+
+.listItems li .mat-checkbox-label {
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.listItems li .mat-checkbox-checked.mat-accent .mat-checkbox-background,
+.listItems li .mat-checkbox-indeterminate.mat-accent .mat-checkbox-background {
+    background-color: #22c064;
+}
+
+.listItems li .mat-ripple-element {
+    background: rgba(34, 192, 100, 0.41) !important;
+}
+
+.signUpContainer .form-group {
+    margin: 0;
+}
+
+.signUpContainer .form-group .mat-form-field-label {
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.signUpContainer .mat-form-field-infix,
+.signUpContainer .mat-form-field {
+    width: 100%;
+}
+
+
+/*
+    Home page Tabs
+*/
+
+.mat-tab-label-container {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    background: #fff;
+    width: 100%;
+    overflow: auto !important;
+    display: inline-table !important;
+}
+
+.mat-tab-label .mat-tab-label-content {
+    font-size: 11px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+@media (max-width: 599px) {
+    .mat-tab-label {
+        min-width: 50px !important;
+    }
+}
+
+.mat-tab-label {
+    padding: 0 !important;
+    height: 60px !important;
+    border-right: 1px solid gray;
+}
+
+.mat-tab-label:last-child {
+    border-right: 0px;
+}
+
+.mat-tab-labels {
+    box-shadow: 0px -3px 7.5px #999;
+}
+
+.mat-tab-header-pagination {
+    display: none !important;
+}
+
+.mat-tab-label .mat-tab-label-content {
+    display: block !important;
+}
+
+.mat-tab-label-content .icon {
+    width: 20px;
+    margin-bottom: 5px;
+}
+
+.example-icon {
+    padding: 0 14px;
+}
+
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+/*
+    Final Deals
+*/
+
+.page_final_deals {
+    background: #f5f6f8;
+}
+
+.headsection {
+    width: 100%;
+    margin: 25px 0px;
+    text-align: center;
+    padding: 0;
+}
+
+.headsection img {
+    width: 70px;
+    margin: 0 0 10px 0;
+}
+
+.headsection h3 {
+    font-weight: 200;
+    font-size: 22px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #5e5e5e;
+}
+
+.headsection h3 span {
+    display: block;
+    font-weight: 300;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.listOfOffers {
+    font-size: 11px;
+    color: #333;
+    padding: 0;
+    margin: 0;
+}
+
+.listOfOffers li {
+    list-style-type: none;
+    padding: 10px 0;
+    margin: 0 0 16px 0;
+    background: #fff;
+}
+
+.listOfOffers img {
+    width: 100%;
+}
+
+.listOfOffers .info {
+    background: #3a5764;
+    width: 100%;
+    border-radius: 5px;
+    color: #fff;
+    padding: 5px 3px;
+}
+
+.listOfOffers .info img {
+    width: 20px;
+}
+
+.listOfOffers .btn {
+    width: 100%;
+    font-size: 10px;
+    border-radius: 0px;
+    padding: 5px;
+}
+
+
+/*
+    Brands Page
+*/
+
+.page_brands {
+    .row {
+        margin: 0 0 10px 0;
+    }
+    .brandCard {
+        background: #fff;
+        height: 140px;
+        text-align: center;
+        padding: 8px;
+        display: table-cell;
+        vertical-align: middle;
+        img {
+            width: 100%;
+        }
+        hr {
+            margin: 0;
+            padding: 0;
+        }
+        span {
+            font-size: 14px;
+            font-weight: 200;
+            color: #999;
+        }
+    }
+}
+/*
+================ Bottom tab styles ===============*/
+.tabOut{
+    .mat-tab-label-container {
+        width: 100%;
+        .mat-tab-label {
+            width: 25%;
+            border-right: 1px solid #cecece;
+            .icon1 {
+                background: url('assets/img/tabicon_hourglass.png') no-repeat;
+                background-position: center 10px;
+                background-size: 18px;
+                height: 60px;
+                width: 100%;
+                h6{
+                    font-size: 11px;
+                    padding: 40px 0 0 0;
+                    margin: 0;
+                    font-weight: normal;
+                }
+            }
+            .icon2 {
+                background: url('assets/img/tabicon_avatar.png') no-repeat;
+                background-position: center 10px;
+                background-size: 18px;
+                height: 60px;
+                width: 100%;
+                h6{
+                    font-size: 11px;
+                    padding: 40px 0 0 0;
+                    margin: 0;
+                    font-weight: normal;
+                }
+            }
+            .icon3 {
+                background: url('assets/img/tabicon_favorites.png') no-repeat;
+                background-position: center 10px;
+                background-size: 22px;
+                height: 60px;
+                width: 100%;
+                h6{
+                    font-size: 11px;
+                    padding: 40px 0 0 0;
+                    margin: 0;
+                    font-weight: normal;
+                }
+            }
+            .icon4 {
+                background: url('assets/img/tabicon_contract.png') no-repeat;
+                background-position: center 10px;
+                background-size: 20px;
+                height: 60px;
+                width: 100%;
+                h6{
+                    font-size: 11px;
+                    padding: 40px 0 0 0;
+                    margin: 0;
+                    font-weight: normal;
+                }
+            }
+        }
+        .mat-tab-label-active {
+            opacity: inherit;
+            color: #fff;
+            .icon1 {
+                background: #375462 url('assets/img/tabicon_hourglass_active.png') no-repeat;
+                background-position: center 10px;
+                background-size: 18px;
+                height: 60px;
+                width: 100%;
+            }
+            .icon2 {
+                background: #375462 url('assets/img/tabicon_avatar_active.png') no-repeat;
+                background-position: center 10px;
+                background-size: 18px;
+                height: 60px;
+                width: 100%;
+            }
+            .icon3 {
+                background: #375462 url('assets/img/tabicon_favorites_active.png') no-repeat;
+                background-position: center 10px;
+                background-size: 22px;
+                height: 60px;
+                width: 100%;
+            }
+            .icon4 {
+                background: #375462 url('assets/img/tabicon_contract_active.png') no-repeat;
+                background-position: center 10px;
+                background-size: 20px;
+                height: 60px;
+                width: 100%;
+            }
+        }
+    }
+    .mat-tab-group.mat-primary, .mat-tab-nav-bar.mat-primary{
+        .mat-ink-bar{
+            background-color: #375462;
+            width: 24.8% !important;
+        }
+    }
+    .mat-tab-label-content {
+        width: 100%;
+    }
+} 
+
+.mat-tab-body.mat-tab-body-active {
+    z-index: 0 !important;
+}
+.iconsList{
+    margin: 12px 0 0 0;
+    padding: 0;
+    li{
+        list-style: none;
+        display: inline-block;
+        a{
+            padding: 1px
+        }
+        img{
+            width: 25px;
+        }
+        // .lineIcons{
+        //     width: 33px;
+        // }
+    }
+}
+
+.bottomTab{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-shadow: 0px -3px 7.5px #999;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    background: #fff;
+    li{
+        width: 25%;
+        list-style: none;
+        float: left;
+        border-right: 1px solid #e8e8e8;
+        &:last-child{
+            border-right:none;
+        }
+        a{
+            padding: 5px 0;
+            display: block;
+            img{
+                width: 20px;
+                margin: 0 auto;
+                display: block;
+            }
+            h6{
+                text-transform: uppercase;
+                color: #7a7a7a;
+                font-size: 11px;
+                text-align: center;
+                margin: 5px 0 0 0;
+            }
+        }
+    }
+}
+.tredingOffersOut{
+    width: 100%;
+    .drag-scroll-content{
+        height: auto !important;
+    }
+    .tredingOffersList{
+        width: 45%;
+        padding: 10px;
+        background: #fff;
+        border-radius: 10px;
+        display: inline-block;
+        margin:0 10px 0 0;
+        text-align: center;
+        img{
+            height: 50px;
+        }
+        p{
+            margin: 10px 0;
+            font-size: 14px;
+            white-space: normal;    
+        }
+        h6{
+            font-size: 12px;
+        }
+    }
+}

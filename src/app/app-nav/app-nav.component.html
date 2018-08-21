@@ -1,7 +1,7 @@
 <mat-sidenav-container class="sidenav-container">
     <mat-sidenav #drawer class="sidenav" fixedInViewport="true" [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'" [mode]="(isHandset$ | async) ? 'over' : 'side'" [opened]="!(isHandset$ | async)">
         <div class="logoBar">
-            <img src="assets/img/logo.png" alt="">
+            <img src="./assets/img/logo.png" alt="">
         </div>
         <mat-toolbar color="primary">
             <div class="profileImg">
@@ -12,23 +12,30 @@
             </div>
         </mat-toolbar>
         <mat-nav-list>
-            <a mat-list-item href="#" [routerLink]="['/home']" class="home"> Home</a>
-            <a mat-list-item href="#" [routerLink]="['/categories']" class="category">Categories ></a>
-            <a mat-list-item href="#" class="finaldeals">Final Deals</a>
-            <a mat-list-item href="#" class="exclusive">Dealhunt Exclusive</a>
+            <a mat-list-item href="#" [routerLink]="['/home']" class="home"><i><img src="./assets/img/home.png" alt=""></i> Home</a>
+            <a mat-list-item href="#" [routerLink]="['/categories']" class="category"><i><img src="./assets/img/categories.png" alt=""></i> Categories ></a>
+            <a mat-list-item href="#" [routerLink]="['/finaldeals']" class="finaldeals"><i><img src="./assets/img/final_deals.png" alt=""></i> Final Deals</a>
+            <a mat-list-item href="#" [routerLink]="['/exclusive']" class="exclusive"><i><img src="./assets/img/dh.png" alt=""></i> Dealhunt Exclusive</a>
             <hr>
-            <a mat-list-item href="#" class="settings">Settings</a>
-            <a mat-list-item href="#" class="shareapp">Share The App</a>
-            <a mat-list-item href="#" class="rateapp">Rate Our App</a>
-            <a mat-list-item href="#" class="helpdesk">Helpdesk</a>
+            <a mat-list-item href="#" [routerLink]="['/settings']" class="settings"><i><img src="./assets/img/settings.png" alt=""></i> Settings</a>
+            <a mat-list-item href="#" class="shareapp"><i><img src="./assets/img/share_app.png" alt=""></i> Share The App</a>
+            <a mat-list-item href="#" class="rateapp"><i><img src="./assets/img/rate_app.png" alt=""></i> Rate Our App</a>
+            <a mat-list-item href="#" [routerLink]="['/helpdesk']" class="helpdesk"><i><img src="./assets/img/help_desk.png" alt=""></i> Helpdesk</a>
+            <a mat-list-item href="#" [routerLink]="['/login']" class="helpdesk"><i><img src="./assets/img/help_desk.png" alt=""></i> Logout</a>
         </mat-nav-list>
     </mat-sidenav>
     <mat-sidenav-content>
         <mat-toolbar color="primary">
-            <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()" *ngIf="isHandset$ | async">
+            <mat-toolbar-row>
+                <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()" *ngIf="isHandset$ | async">
                 <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
             </button>
-            <span>Dealhunt</span>
+                <span>Dealhunt</span>
+                <span class="example-spacer"></span>
+                <mat-icon>notification_important</mat-icon>
+                <mat-icon>search</mat-icon>
+                <mat-icon>person</mat-icon>
+            </mat-toolbar-row>
         </mat-toolbar>
         <!-- Add Content Here -->
 

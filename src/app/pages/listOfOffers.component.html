@@ -1,0 +1,204 @@
+<section class="offerspage">
+    <div class="row">
+        <div class="col">
+            <div class="btn-group" role="group">
+                <button type="button" class="btn btn-default" [routerLink]="['/categories']"><span>Search By</span><br>Categories</button>
+                <button type="button" class="btn btn-default">></button>
+            </div>
+        </div>
+        <div class="col text-right">
+            <div class="btn-group" role="group">
+                <button type="button" class="btn btn-default" [routerLink]="['/brands']"><span>Search By</span><br>Brands</button>
+                <button type="button" class="btn btn-default">></button>
+            </div>
+        </div>
+    </div>
+    <div class="row" *ngFor="let item of banners">
+        <div class="col">
+            <img src="{{item.bannerimage}}" class="banners" alt="">
+        </div>
+    </div>
+    <!-- <div class="row">
+        <div class="col">
+            <img src="./assets/img/banner_vivio.png" class="banners" alt="">
+        </div>
+    </div> -->
+    <div class="titleWithLink">
+        <div class="row">
+            <div class="col">
+                <h2>
+                    OFFERS NEAR YOU</h2>
+            </div>
+        </div>
+    </div>
+    <div class="row btnGroup">
+        <div class="col">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>sort By</span><br>DISTANCE</button>
+        </div>
+        <div class="col">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>filter By</span><br>< than 5kms</button>
+        </div>
+        <div class="col">
+            <ul class="iconsList">
+                <li><a href=""><img src="./assets/img/map.png"></a></li>
+                <li><a href=""><img class="lineIcons" src="./assets/img/list-simple-line-icons.png"></a></li>
+                <li><a href=""><img src="./assets/img/green_circle.png"></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <div class="map"></div>
+        </div>
+    </div>
+
+    <div class="titleWithLink">
+        <div class="row">
+            <div class="col">
+                <h2>TRENDING OFFERS</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-8">
+                <p>Checkout the latest offer on Dealhunt!</p>
+            </div>
+            <div class="col-4"><a href (click)="goToStore()">View More Offers ></a></div>
+        </div>
+    </div>
+    <div class="tredingOffersOut">
+        <drag-scroll>
+            <div class="tredingOffersList">
+                <img src="./assets/img/brands/red-chief.png" alt="">
+                <p>Get Upto 50% Off + Extra Rs. 100 off on orders worth Rs. 1000 & Above</p>
+                <h6>Expires on 31st July 2018</h6>
+                <button type="button" class="btn btn-danger">View More</button>
+            </div>
+            <div class="tredingOffersList">
+                <img src="./assets/img/brands/red-chief.png" alt="">
+                <p>Get Upto 50% Off + Extra Rs. 100 off on orders worth Rs. 1000 & Above</p>
+                <h6>Expires on 31st July 2018</h6>
+                <button type="button" class="btn btn-danger">View More</button>
+            </div>
+            <div class="tredingOffersList">
+                <img src="./assets/img/brands/red-chief.png" alt="">
+                <p>Get Upto 50% Off + Extra Rs. 100 off on orders worth Rs. 1000 & Above</p>
+                <h6>Expires on 31st July 2018</h6>
+                <button type="button" class="btn btn-danger">View More</button>
+            </div>
+        </drag-scroll>
+    </div>
+
+    <!-- <ul class="listOfOffersVertical">
+        <li>
+            <img src="./assets/img/brands/red-chief.png" alt="">
+            <p>Get Upto 50% Off + Extra Rs. 100 off on orders worth Rs. 1000 & Above</p>
+            <h6>Expires on 31st July 2018</h6>
+            <button type="button" class="btn btn-danger">View More</button>
+        </li>
+    </ul> -->
+
+    <div class="titleWithLink">
+        <div class="row">
+            <div class="col">
+                <h2>RECOMMENDED OFFERS</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-8">
+                <p>Checkout the latest offer on Dealhunt!</p>
+            </div>
+            <div class="col-4"><a href (click)="goToStore()">View More Offers ></a></div>
+        </div>
+    </div>
+
+
+    <ul class="listOfOffers">
+        <li>
+            <div class="row align-items-center">
+                <div class="col">
+                    <img src="./assets/img/brands/red-chief.png" alt="">
+                </div>
+                <div class="col-6">
+                    Get Upto 50% Off + Extra Rs. 100 off on orders worth Rs. 1000 & Above
+                    <div class="info">
+                        <img src="./assets/img/icon_time-left.png" alt=""> Offer Ends in 2:30:20 hrs
+                    </div>
+
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-danger">View More</button>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="row align-items-center">
+                <div class="col">
+                    <img src="./assets/img/brands/furnspace.png" alt="">
+                </div>
+                <div class="col-6">
+                    Double Savings. Get Upto 50% off + Extra 10% off on orders above Rs.7999
+                    <div class="info">
+                        <img src="./assets/img/icon_time-left.png" alt=""> Offer Ends in 2:30:20 hrs
+                    </div>
+
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-danger">View More</button>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="row align-items-center">
+                <div class="col">
+                    <img src="./assets/img/brands/myntra.png" alt="">
+                </div>
+                <div class="col-6">
+                    Myntra Fresh Apparels – Get Upto 70% + Extra 25% OFF Top Brands
+                    <div class="info">
+                        <img src="./assets/img/icon_time-left.png" alt=""> Offer Ends in 2:30:20 hrs
+                    </div>
+
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-danger">View More</button>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="row align-items-center">
+                <div class="col">
+                    <img src="./assets/img/brands/myntra.png" alt="">
+                </div>
+                <div class="col-6">
+                    Myntra Fresh Apparels – Get Upto 70% + Extra 25% OFF Top Brands
+                    <div class="info">
+                        <img src="./assets/img/icon_time-left.png" alt=""> Offer Ends in 2:30:20 hrs
+                    </div>
+
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-danger">View More</button>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="row align-items-center">
+                <div class="col">
+                    <img src="./assets/img/brands/myntra.png" alt="">
+                </div>
+                <div class="col-6">
+                    Myntra Fresh Apparels – Get Upto 70% + Extra 25% OFF Top Brands
+                    <div class="info">
+                        <img src="./assets/img/icon_time-left.png" alt=""> Offer Ends in 2:30:20 hrs
+                    </div>
+
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-danger">View More</button>
+                </div>
+            </div>
+        </li>
+    </ul>
+
+</section>
