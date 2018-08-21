@@ -134,7 +134,9 @@ header h1 {
 .mat-icon-button {
     margin-left: -10px !important;
 }
-
+.clear{
+    clear: both;
+}
 
 /*
 ======================= mat checkbox custom styles ============================*/
@@ -454,4 +456,84 @@ header h1 {
 
 .mat-tab-body.mat-tab-body-active {
     z-index: 0 !important;
+}
+.iconsList{
+    margin: 12px 0 0 0;
+    padding: 0;
+    li{
+        list-style: none;
+        display: inline-block;
+        a{
+            padding: 1px
+        }
+        img{
+            width: 25px;
+        }
+        // .lineIcons{
+        //     width: 33px;
+        // }
+    }
+}
+
+.bottomTab{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-shadow: 0px -3px 7.5px #999;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    background: #fff;
+    li{
+        width: 25%;
+        list-style: none;
+        float: left;
+        border-right: 1px solid #e8e8e8;
+        &:last-child{
+            border-right:none;
+        }
+        a{
+            padding: 5px 0;
+            display: block;
+            img{
+                width: 20px;
+                margin: 0 auto;
+                display: block;
+            }
+            h6{
+                text-transform: uppercase;
+                color: #7a7a7a;
+                font-size: 11px;
+                text-align: center;
+                margin: 5px 0 0 0;
+            }
+        }
+    }
+}
+.tredingOffersOut{
+    width: 100%;
+    .drag-scroll-content{
+        height: auto !important;
+    }
+    .tredingOffersList{
+        width: 45%;
+        padding: 10px;
+        background: #fff;
+        border-radius: 10px;
+        display: inline-block;
+        margin:0 10px 0 0;
+        text-align: center;
+        img{
+            height: 50px;
+        }
+        p{
+            margin: 10px 0;
+            font-size: 14px;
+            white-space: normal;    
+        }
+        h6{
+            font-size: 12px;
+        }
+    }
 }
