@@ -40,6 +40,7 @@ import {CdkTreeModule} from '@angular/cdk/tree';
 import {MatTabsModule} from '@angular/material/tabs';
 import { DragScrollModule } from 'ngx-drag-scroll';
 import { ApiService } from './_services/api.service';
+import {MatRadioModule} from '@angular/material/radio';
 @NgModule({
     imports: [
         BrowserModule,
@@ -61,7 +62,8 @@ import { ApiService } from './_services/api.service';
         MatSidenavModule,
         MatIconModule,
         MatListModule,
-        PagesModule        
+        PagesModule,
+        MatRadioModule        
         ],
     declarations: [
         AppComponent,
