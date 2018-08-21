@@ -1,24 +1,37 @@
 {
-  "index": "/index.html",
-  "assetGroups": [{
-    "name": "app",
-    "installMode": "prefetch",
-    "resources": {
-      "files": [
-        "/favicon.ico",
-        "/index.html",
-        "/*.css",
-        "/*.js"
-      ]
-    }
-  }, {
-    "name": "assets",
-    "installMode": "lazy",
-    "updateMode": "prefetch",
-    "resources": {
-      "files": [
-        "/assets/**"
-      ]
-    }
-  }]
+    "index": "/index.html",
+    "assetGroups": [{
+        "name": "app",
+        "installMode": "prefetch",
+        "resources": {
+            "files": [
+                "/favicon.ico",
+                "/index.html",
+                "/*.css",
+                "/*.js"
+            ]
+        }
+    }, {
+        "name": "assets",
+        "installMode": "lazy",
+        "updateMode": "prefetch",
+        "resources": {
+            "files": [
+                "/assets/**"
+            ],
+            "urls": [
+                "https://fonts.googleapis.com/**"
+            ]
+        }
+    }],
+    "dataGroups": [{
+        "name": "from-api",
+        "urls": ["/home", "/categories", "/finaldeals", "/exclusive", "/settings", "/helpdesk", "/brands", "/brand-detail", "/login", "/register", "/register2", "/register3", "/signup", "/preferences1", "/preferences2/:title"],
+        "cacheConfig": {
+            "strategy": "freshness",
+            "maxSize": 15,
+            "maxAge": "1h",
+            "timeout": "5s"
+        }
+    }]
 }

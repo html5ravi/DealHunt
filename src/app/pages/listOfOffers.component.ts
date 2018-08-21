@@ -20,5 +20,5 @@ export class ListOfOffersComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  goToStore(){}
 }

@@ -16,5 +16,7 @@ export class ExclusiveComponent implements OnInit {
   ngOnInit() {
    
   }
-
+  goToStore(){
+    
+  }
 }
