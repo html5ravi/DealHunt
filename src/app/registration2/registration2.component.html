@@ -3,14 +3,21 @@
     <h3>Sign In</h3>
 
 
-    <form [formGroup]="signIn_form">
-        <div class="form-group">
+    <form [formGroup]="signIn_form" (ngSubmit)="onSubmit()">
+        <!--<div class="form-group">
             <mat-form-field class="full-width">
                 <input matInput placeholder="Enter OTP Number" formControlName="otp" type="password" value="452154">
             </mat-form-field>
-            <!--<mat-error *ngIf="otp.hasError('required')">
-                    OTP is <strong>required</strong>
-                </mat-error>-->
+            
+        </div>-->
+        <div class="form-group">
+            <!--<input type="text" formControlName="username" placeholder="Enter Your Mobile Number" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.username.errors }" />-->
+            <mat-form-field class="full-width">
+                <input matInput placeholder="Enter OTP Number" formControlName="otp" type="password" value="452154" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.otp.errors }" />
+                <div *ngIf="submitted && f.otp.errors" class="invalid-feedback">
+                    <div *ngIf="f.otp.errors.required">OTP Number is required</div>
+                </div>
+            </mat-form-field>
         </div>
         <p>We've sent the confirmation code to your mobile. Please confirm to login.</p>
         <div class="btnCont">
