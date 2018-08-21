@@ -11,12 +11,22 @@ import { BrandsComponent } from './brands.component';
 import { BrandDetailsComponent } from './brandDetails.component';
 import { DragScrollModule } from 'ngx-drag-scroll';
 import { ListOfOffersComponent } from './listOfOffers.component';
-
+import { MyAccountComponent } from './myAccount.component';
+import {MatTabsModule} from '@angular/material/tabs';
+import {MatInputModule} from '@angular/material/input';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatRadioModule} from '@angular/material/radio';
+import {MatSelectModule} from '@angular/material/select';
 @NgModule({
     imports: [
       CommonModule,
       pageRouting,
-      DragScrollModule
+      DragScrollModule,
+      MatTabsModule,
+      MatInputModule,
+      MatDatepickerModule,
+      MatRadioModule,
+      MatSelectModule
     ],
     declarations: [
       CategoriesComponent,
@@ -26,7 +36,8 @@ import { ListOfOffersComponent } from './listOfOffers.component';
       HelpdeskComponent,
       BrandsComponent,
       BrandDetailsComponent,
-      ListOfOffersComponent
+      ListOfOffersComponent,
+      MyAccountComponent
 ],
     exports:[
       CategoriesComponent,
@@ -35,7 +46,8 @@ import { ListOfOffersComponent } from './listOfOffers.component';
       SettingsComponent,
       HelpdeskComponent,
       BrandsComponent,
-      ListOfOffersComponent
+      ListOfOffersComponent,
+      MyAccountComponent
     ]
 })
 export class PagesModule { }

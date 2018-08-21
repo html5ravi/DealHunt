@@ -189,54 +189,54 @@ header h1 {
     Home page Tabs
 */
 
-.mat-tab-label-container {
-    position: fixed;
-    bottom: 0px;
-    left: 0px;
-    background: #fff;
-    width: 100%;
-    overflow: auto !important;
-    display: inline-table !important;
-}
+// .mat-tab-label-container {
+//     position: fixed;
+//     bottom: 0px;
+//     left: 0px;
+//     background: #fff;
+//     width: 100%;
+//     overflow: auto !important;
+//     display: inline-table !important;
+// }
 
-.mat-tab-label .mat-tab-label-content {
-    font-size: 11px;
-    font-weight: 400;
-    text-transform: uppercase;
-}
+// .mat-tab-label .mat-tab-label-content {
+//     font-size: 11px;
+//     font-weight: 400;
+//     text-transform: uppercase;
+// }
 
-@media (max-width: 599px) {
-    .mat-tab-label {
-        min-width: 50px !important;
-    }
-}
+// @media (max-width: 599px) {
+//     .mat-tab-label {
+//         min-width: 50px !important;
+//     }
+// }
 
-.mat-tab-label {
-    padding: 0 !important;
-    height: 60px !important;
-    border-right: 1px solid gray;
-}
+// .mat-tab-label {
+//     padding: 0 !important;
+//     height: 60px !important;
+//     border-right: 1px solid gray;
+// }
 
-.mat-tab-label:last-child {
-    border-right: 0px;
-}
+// .mat-tab-label:last-child {
+//     border-right: 0px;
+// }
 
-.mat-tab-labels {
-    box-shadow: 0px -3px 7.5px #999;
-}
+// .mat-tab-labels {
+//     box-shadow: 0px -3px 7.5px #999;
+// }
 
-.mat-tab-header-pagination {
-    display: none !important;
-}
+// .mat-tab-header-pagination {
+//     display: none !important;
+// }
 
-.mat-tab-label .mat-tab-label-content {
-    display: block !important;
-}
+// .mat-tab-label .mat-tab-label-content {
+//     display: block !important;
+// }
 
-.mat-tab-label-content .icon {
-    width: 20px;
-    margin-bottom: 5px;
-}
+// .mat-tab-label-content .icon {
+//     width: 20px;
+//     margin-bottom: 5px;
+// }
 
 .example-icon {
     padding: 0 14px;
@@ -534,6 +534,51 @@ header h1 {
         }
         h6{
             font-size: 12px;
+        }
+    }
+}
+
+
+/*
+========= My Account ===========*/
+.myAcoount{
+    .mat-tab-group.mat-primary, .mat-tab-nav-bar.mat-primary{
+        .mat-ink-bar {
+            background-color: #417188;
+        }
+    }  
+    .mat-tab-body{
+        padding: 10px;
+    }
+    .mat-tab-label{
+        opacity: 0.6;
+        color: #375360;
+        .mat-tab-label-content{
+            text-transform: uppercase;
+        }
+    }
+    .mat-tab-label-active{
+        color: #375360;
+        opacity: 1;
+    }
+    .mat-form-field-infix, .mat-form-field{
+        width: 100%;
+    }
+    .form-group{
+        margin: 0;
+    }
+    .mat-radio-button{
+        margin: 0 15px 0 0;
+    }
+    .genderLbl{
+        display: block;
+    }
+}
+
+@media (max-width: 599px){
+    .myAcoount{
+        .mat-tab-label {
+            min-width: 50%;
         }
     }
 }
