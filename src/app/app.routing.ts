@@ -19,6 +19,7 @@ import { SettingsComponent } from './pages/settings.component';
 import { BrandDetailsComponent } from './pages/brandDetails.component';
 import { MyAccountComponent } from './pages/myAccount.component';
 import { ListYourOfferComponent } from './pages/listYourOffer.component';
+import { ListOfOffersComponent } from './pages/listOfOffers.component';
 
 const appRoutes: Routes = [
     {   path: '', 
@@ -49,6 +50,10 @@ const appRoutes: Routes = [
             {
                 path:'exclusive',
                 component:ExclusiveComponent
+            },
+            {
+                path:'listofoffers',
+                component:ListOfOffersComponent
             },
             {
                 path:'listyouroffer',

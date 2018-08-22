@@ -12,7 +12,6 @@ export class DashboardComponent implements OnInit {
     this.api.getAll("advertisements?orderby_dsc=score&").subscribe(
       res=>{
         this.banners = res.data;
-        alert("hello");
         console.log("Banners",res)
       }
     )
