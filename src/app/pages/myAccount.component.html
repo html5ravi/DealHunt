@@ -1,0 +1,52 @@
+<section class="myAcoount">
+    <!-- <mat-tab-group>
+        <mat-tab label="Profile">
+            <div class="form-group">
+                <mat-form-field class="full-width">
+                    <input matInput placeholder="Name" formControlName="name" type="text" />
+                </mat-form-field>
+            </div>    
+        </mat-tab>
+        <mat-tab label="Active vouchers"> Content 2 </mat-tab>
+    </mat-tab-group> -->
+    <form>
+        <div class="form-group">
+            <mat-form-field class="full-width">
+                <input matInput placeholder="Name" formControlName="name" type="text" />
+            </mat-form-field>
+        </div>
+        <div class="form-group">
+            <mat-form-field class="full-width">
+                <input matInput placeholder="Number" formControlName="name" type="text" />
+            </mat-form-field>
+        </div>
+        <div class="form-group">
+            <mat-form-field>
+                <input matInput [matDatepicker]="picker" placeholder="Date of birth" formControlName="dob">
+                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field>
+        </div>
+        <div class="form-group">
+            <label class="genderLbl">Gender</label>
+            <mat-radio-group>
+                <mat-radio-button value="1">Male</mat-radio-button>
+                <mat-radio-button value="2">Female</mat-radio-button>
+            </mat-radio-group>
+        </div>
+        <div class="form-group">
+            <mat-form-field>
+                <mat-select placeholder="Select the city" formControlName="city">
+                    <mat-option *ngFor="let city of cities" [value]="city.value">
+                        {{city.viewValue}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div class="form-group">
+            <mat-form-field class="full-width">
+                <input matInput placeholder="Preferences" formControlName="preferences" type="text" />
+            </mat-form-field>
+        </div>
+    </form>
+</section>

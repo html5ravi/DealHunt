@@ -17,6 +17,9 @@ import { ExclusiveComponent } from './pages/exclusive.component';
 import { HelpdeskComponent } from './pages/helpdesk.component';
 import { SettingsComponent } from './pages/settings.component';
 import { BrandDetailsComponent } from './pages/brandDetails.component';
+import { MyAccountComponent } from './pages/myAccount.component';
+import { ListYourOfferComponent } from './pages/listYourOffer.component';
+
 const appRoutes: Routes = [
     {   path: '', 
         canActivate: [AuthGuard], 
@@ -40,8 +43,16 @@ const appRoutes: Routes = [
                 component:FinalDealsComponent
             },
             {
+                path:'myaccount',
+                component:MyAccountComponent
+            },
+            {
                 path:'exclusive',
                 component:ExclusiveComponent
+            },
+            {
+                path:'listyouroffer',
+                component:ListYourOfferComponent
             },
             {
                 path:'settings',
