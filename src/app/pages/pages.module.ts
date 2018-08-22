@@ -17,6 +17,7 @@ import {MatInputModule} from '@angular/material/input';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatSelectModule} from '@angular/material/select';
+import { ListYourOfferComponent } from './listYourOffer.component';
 @NgModule({
     imports: [
       CommonModule,
@@ -37,7 +38,8 @@ import {MatSelectModule} from '@angular/material/select';
       BrandsComponent,
       BrandDetailsComponent,
       ListOfOffersComponent,
-      MyAccountComponent
+      MyAccountComponent,
+      ListYourOfferComponent
 ],
     exports:[
       CategoriesComponent,
@@ -47,7 +49,8 @@ import {MatSelectModule} from '@angular/material/select';
       HelpdeskComponent,
       BrandsComponent,
       ListOfOffersComponent,
-      MyAccountComponent
+      MyAccountComponent,
+      ListYourOfferComponent
     ]
 })
 export class PagesModule { }

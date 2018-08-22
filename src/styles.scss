@@ -508,6 +508,9 @@ header h1 {
                 text-align: center;
                 margin: 5px 0 0 0;
             }
+            &:hover{
+                text-decoration: none;
+            }
         }
     }
 }
@@ -582,3 +585,16 @@ header h1 {
         }
     }
 }
+
+.listYourOffer{
+    .form-group{
+        margin: 0;
+    }
+    .mat-form-field-infix, .mat-form-field{
+        width: 100%;
+    }
+    .btn-danger{
+        text-transform: uppercase;
+    }
+}
+
