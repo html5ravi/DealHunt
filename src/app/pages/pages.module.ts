@@ -18,6 +18,11 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatSelectModule} from '@angular/material/select';
 import { ListYourOfferComponent } from './listYourOffer.component';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { Tab3Component } from './tab3.component';
+import { TabComponent } from './tab.component';
+import { TabContentComponent } from './tab.content.component';
+
 @NgModule({
     imports: [
       CommonModule,
@@ -27,7 +32,8 @@ import { ListYourOfferComponent } from './listYourOffer.component';
       MatInputModule,
       MatDatepickerModule,
       MatRadioModule,
-      MatSelectModule
+      MatSelectModule,
+      MatFormFieldModule
     ],
     declarations: [
       CategoriesComponent,
@@ -39,7 +45,10 @@ import { ListYourOfferComponent } from './listYourOffer.component';
       BrandDetailsComponent,
       ListOfOffersComponent,
       MyAccountComponent,
-      ListYourOfferComponent
+      ListYourOfferComponent,
+      Tab3Component,
+      TabComponent,
+      TabContentComponent
 ],
     exports:[
       CategoriesComponent,
@@ -50,7 +59,10 @@ import { ListYourOfferComponent } from './listYourOffer.component';
       BrandsComponent,
       ListOfOffersComponent,
       MyAccountComponent,
-      ListYourOfferComponent
+      ListYourOfferComponent,
+      Tab3Component,
+      TabComponent,
+      TabContentComponent
     ]
 })
 export class PagesModule { }
