@@ -18,10 +18,12 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatSelectModule} from '@angular/material/select';
 import { ListYourOfferComponent } from './listYourOffer.component';
+
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { Tab3Component } from './tab3.component';
 import { TabComponent } from './tab.component';
 import { TabContentComponent } from './tab.content.component';
+import { DashboardComponent } from './dashboard.component';
 
 @NgModule({
     imports: [
@@ -36,6 +38,7 @@ import { TabContentComponent } from './tab.content.component';
       MatFormFieldModule
     ],
     declarations: [
+      DashboardComponent,
       CategoriesComponent,
       FinalDealsComponent,
       ExclusiveComponent,
@@ -51,6 +54,7 @@ import { TabContentComponent } from './tab.content.component';
       TabContentComponent
 ],
     exports:[
+      DashboardComponent,
       CategoriesComponent,
       FinalDealsComponent,
       ExclusiveComponent,
