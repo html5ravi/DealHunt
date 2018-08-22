@@ -18,6 +18,7 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatSelectModule} from '@angular/material/select';
 import { ListYourOfferComponent } from './listYourOffer.component';
+import { DashboardComponent } from './dashboard.component';
 @NgModule({
     imports: [
       CommonModule,
@@ -30,6 +31,7 @@ import { ListYourOfferComponent } from './listYourOffer.component';
       MatSelectModule
     ],
     declarations: [
+      DashboardComponent,
       CategoriesComponent,
       FinalDealsComponent,
       ExclusiveComponent,
@@ -42,6 +44,7 @@ import { ListYourOfferComponent } from './listYourOffer.component';
       ListYourOfferComponent
 ],
     exports:[
+      DashboardComponent,
       CategoriesComponent,
       FinalDealsComponent,
       ExclusiveComponent,

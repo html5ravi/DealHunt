@@ -22,7 +22,7 @@ import { environment } from '../environments/environment';
 import { AppNavComponent } from './app-nav/app-nav.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule } from '@angular/material';
-import { MainComponent } from './main/main.component';;
+import { MainComponent } from './main/main.component';
 import { Registration2Component } from './registration2/registration2.component';
 import { Registration3Component } from './registration3/registration3.component';
 import { SignupComponent } from './signup/signup.component';
