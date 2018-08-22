@@ -6,8 +6,10 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './myAccount.component.html'
 })
 export class MyAccountComponent implements OnInit {
-
-  constructor() { }
+  public tab = 1;
+  constructor() {
+    
+   }
 
   ngOnInit() {
   }
@@ -16,6 +18,17 @@ export class MyAccountComponent implements OnInit {
     {value: 'chennai-1', viewValue: 'Chennai'},
     {value: 'Delhi-2', viewValue: 'Delhi'}
   ];
+
+  
+
+  setTab(num: number) {
+    this.tab = num;
+  }
+  
+  isSelected(num: number) {
+    return this.tab === num;
+  }
+  
 }
 
 export interface City {

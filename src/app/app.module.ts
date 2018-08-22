@@ -22,7 +22,7 @@ import { environment } from '../environments/environment';
 import { AppNavComponent } from './app-nav/app-nav.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule } from '@angular/material';
-import { MainComponent } from './main/main.component';;
+import { MainComponent } from './main/main.component';
 import { Registration2Component } from './registration2/registration2.component';
 import { Registration3Component } from './registration3/registration3.component';
 import { SignupComponent } from './signup/signup.component';
@@ -41,11 +41,13 @@ import {MatTabsModule} from '@angular/material/tabs';
 import { DragScrollModule } from 'ngx-drag-scroll';
 import { ApiService } from './_services/api.service';
 import {MatRadioModule} from '@angular/material/radio';
+import {MatFormFieldModule} from '@angular/material/form-field';
 @NgModule({
     imports: [
         BrowserModule,
         DragScrollModule,
         MatCheckboxModule,
+        MatFormFieldModule,
         MatInputModule,
         MatSelectModule,
         MatTabsModule,
