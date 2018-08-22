@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-// import { DragScrollModule } from 'ngx-drag-scroll';
+import { Router } from '@angular/router';
+import { HttpClient } from '@angular/common/http';
+import { ApiService } from '../_services/api.service';
 
 // declare var $: any;
 // declare var jQuery: any;
@@ -8,9 +10,14 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './exclusive.component.html'
 })
 export class ExclusiveComponent implements OnInit {
-
-  constructor() { 
-    
+  public dhexclusive: any;
+  constructor(private route:Router, public http:HttpClient, public api: ApiService) { 
+    this.api.getAll("brands?orderby_asc=name").subscribe(
+      res=>{
+        this.dhexclusive = res.data;
+        console.log("dhExclusive", res);
+      }
+    )
   }
 
   ngOnInit() {

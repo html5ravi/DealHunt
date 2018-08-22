@@ -21,7 +21,7 @@ export class BrandsComponent implements OnInit {
   ngOnInit() {
   }
   goToDetailPage(){
-    this.route.navigate(['brand-detail'])
+    this.route.navigate(['listofoffers'])
   }
 
 }

@@ -11,7 +11,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./app-nav.component.scss'],
 })
 export class AppNavComponent {
- 
+  public icon = 'close'; 
   @ViewChild(MatSidenav) drawer: MatSidenav;
   isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
     .pipe(
@@ -27,5 +27,5 @@ export class AppNavComponent {
         
       });
     }
-  
+    
   }

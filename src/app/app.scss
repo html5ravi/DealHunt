@@ -5,7 +5,7 @@
 }
 
 .brandDetail {
-    padding-bottom: 20px;
+    padding-bottom: 70px;
     .banner {
         height: auto;
         margin: 10px 0 20px 0;
@@ -42,27 +42,7 @@
     }
 }
 
-.titleWithLink {
-    h2 {
-        font-size: 20px;
-        color: #888;
-        font-weight: 300;
-        margin-top: 10px;
-        text-transform: uppercase;
-    }
-    p {
-        font-size: 12px;
-        font-weight: 300;
-        line-height: 1em;
-    }
-    a {
-        font-size: 12px;
-        font-weight: 300;
-        color: #375461;
-        float: right;
-        line-height: .8em;
-    }
-}
+
 
 drag-scroll {
     height: auto;
@@ -100,7 +80,7 @@ drag-scroll {
 .dashboardPage {
     font-family: 'Source Sans Pro', sans-serif;
     background: #f5f6f8;
-    padding-bottom: 0;
+    padding-bottom: 70px;
     .btn {
         text-transform: uppercase;
         font-family: 'Source Sans Pro', sans-serif;
@@ -149,6 +129,33 @@ drag-scroll {
         height: 250px;
         width: 100%;
         background: #ccc;
+    }
+    .titleWithLink {
+        .row{
+            margin-bottom: 0;
+        }
+        h2 {
+            font-size: 20px;
+            color: #888;
+            font-weight: 300;
+            margin-top: 10px;
+            text-transform: uppercase;
+        }
+        p {
+            font-size: 12px;
+            font-weight: 300;
+            line-height: 1em;
+        }
+        a {
+            font-size: 12px;
+            font-weight: 300;
+            color: #375461;
+            float: right;
+            line-height: .8em;
+        }
+    }
+    .btn-danger{
+        text-align: center;
     }
 }
 
