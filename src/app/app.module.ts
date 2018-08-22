@@ -41,11 +41,13 @@ import {MatTabsModule} from '@angular/material/tabs';
 import { DragScrollModule } from 'ngx-drag-scroll';
 import { ApiService } from './_services/api.service';
 import {MatRadioModule} from '@angular/material/radio';
+import {MatFormFieldModule} from '@angular/material/form-field';
 @NgModule({
     imports: [
         BrowserModule,
         DragScrollModule,
         MatCheckboxModule,
+        MatFormFieldModule,
         MatInputModule,
         MatSelectModule,
         MatTabsModule,

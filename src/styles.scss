@@ -585,6 +585,32 @@ header h1 {
     .genderLbl {
         display: block;
     }
+    .tabs-selection {
+        display: flex;
+        box-sizing: border-box;
+        flex-direction: row;
+        padding: 0;
+        width: 100%;
+        position: relative;     
+    }
+    
+    app-tab{
+        width: 50%;
+        text-transform: uppercase;
+        border-bottom: 1px solid #417188;
+        text-align: center;
+        padding: 7px 0 0px 0;
+        .active{
+           padding: 0px 0 7px 0;
+            color: #417188;
+            // border-bottom: 1px solid #417188;
+            
+        }
+    }
+    .door{
+        padding: 10px 0;
+    }
+    
 }
 
 @media (max-width: 599px) {

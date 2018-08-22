@@ -24,7 +24,7 @@
             <a mat-list-item href="#" [routerLink]="['/login']" class="helpdesk"><i><img src="./assets/img/help_desk.png" alt=""></i> Logout</a>
         </mat-nav-list>
     </mat-sidenav>
-    <mat-sidenav-content>
+    <mat-sidenav-content class="headerMenuIcons">
         <mat-toolbar color="primary">
             <mat-toolbar-row>
                 <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()" *ngIf="isHandset$ | async">
