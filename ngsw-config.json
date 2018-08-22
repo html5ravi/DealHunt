@@ -20,13 +20,13 @@
                 "/assets/**"
             ],
             "urls": [
-                "https://fonts.googleapis.com/**"
+                "https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900"
             ]
         }
     }],
     "dataGroups": [{
         "name": "from-api",
-        "urls": ["/home", "/categories", "/finaldeals", "/exclusive", "/settings", "/helpdesk", "/brands", "/brand-detail", "/login", "/register", "/register2", "/register3", "/signup", "/preferences1", "/preferences2/:title"],
+        "urls": ["http://api.sttarter.com/contentsystem/cea94caf3b38196b8f0f5cea05a534c9/brands?orderby_asc=name", "http://api.sttarter.com/contentsystem/cea94caf3b38196b8f0f5cea05a534c9/categories?orderby_asc=title"],
         "cacheConfig": {
             "strategy": "freshness",
             "maxSize": 15,
