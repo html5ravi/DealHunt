@@ -23,6 +23,11 @@ import { ListOfOffersComponent } from './pages/listOfOffers.component';
 
 const appRoutes: Routes = [
     {
+        path:'',
+        redirectTo:'login',
+        pathMatch:'full'
+    },
+    {
         path:'home',
         loadChildren: './pages/pages.module#PagesModule',
         // component:HomeComponent
