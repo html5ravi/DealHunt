@@ -24,11 +24,12 @@ import { Tab3Component } from './tab3.component';
 import { TabComponent } from './tab.component';
 import { TabContentComponent } from './tab.content.component';
 import { DashboardComponent } from './dashboard.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
     imports: [
       CommonModule,
-      pageRouting,
+      pageRouting,      
       DragScrollModule,
       MatTabsModule,
       MatInputModule,

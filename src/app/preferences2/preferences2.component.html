@@ -1,11 +1,10 @@
 <header>
-  <h1>your reperence</h1>
+    <h1>your reperence</h1>
 </header>
 <ul class="listItems">
-  <li *ngFor="let item of subCategories">
-    <mat-checkbox>{{item.subtitle}}</mat-checkbox>
-  </li> 
+    <li *ngFor="let item of subCategories">
+        <mat-checkbox>{{item.subtitle}}</mat-checkbox>
+    </li>
 </ul>
 
-
-<a href [routerLink]="['/home']" class="nextBtn">Next</a>
+<a href [routerLink]="['/']" class="nextBtn">Next</a>

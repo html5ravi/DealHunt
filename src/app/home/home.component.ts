@@ -13,9 +13,9 @@ export class HomeComponent implements OnInit {
     constructor(private userService: UserService, public router:Router) {
         this.currentUser = JSON.parse(localStorage.getItem('currentUser'));
         /*if(!this.currentUser){
-            this.router.navigate(['/home']);
+            this.router.navigate(['/login']);
         }else{
-            this.router.navigate(['/home']);
+            this.router.navigate(['/']);
         }*/
     }
 

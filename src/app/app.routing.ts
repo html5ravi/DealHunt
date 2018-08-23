@@ -22,60 +22,10 @@ import { ListYourOfferComponent } from './pages/listYourOffer.component';
 import { ListOfOffersComponent } from './pages/listOfOffers.component';
 
 const appRoutes: Routes = [
-    {   path: '', 
-        // canActivate: [AuthGuard], 
-        component:MainComponent,
-        children:[
-            {
-                path:'',
-                redirectTo:'home',
-                pathMatch:'full'
-            },
-            {
-                path:'home',
-                component:HomeComponent
-            },
-            {
-                path:'categories',
-                component:CategoriesComponent
-            },
-            {
-                path:'finaldeals',
-                component:FinalDealsComponent
-            },
-            {
-                path:'myaccount',
-                component:MyAccountComponent
-            },
-            {
-                path:'exclusive',
-                component:ExclusiveComponent
-            },
-            {
-                path:'listofoffers',
-                component:ListOfOffersComponent
-            },
-            {
-                path:'listyouroffer',
-                component:ListYourOfferComponent
-            },
-            {
-                path:'settings',
-                component:SettingsComponent
-            },
-            {
-                path:'helpdesk',
-                component:HelpdeskComponent
-            },
-            {
-                path:'brands',
-                component:BrandsComponent
-            },
-            {
-                path:'brand-detail',
-                component:BrandDetailsComponent
-            }
-        ]
+    {
+        path:'home',
+        loadChildren: 'pages/pages.module#PagesModule',
+        // component:HomeComponent
     },
     { path: 'login', component: LoginComponent },
     { path: 'register', component: RegisterComponent },
