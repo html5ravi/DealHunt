@@ -24,7 +24,7 @@ import { ListOfOffersComponent } from './pages/listOfOffers.component';
 const appRoutes: Routes = [
     {
         path:'home',
-        loadChildren: 'pages/pages.module#PagesModule',
+        loadChildren: './pages/pages.module#PagesModule',
         // component:HomeComponent
     },
     { path: 'login', component: LoginComponent },
