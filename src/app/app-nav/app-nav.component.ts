@@ -25,10 +25,26 @@ export class AppNavComponent {
   constructor(private breakpointObserver: BreakpointObserver, private _router:Router) {
 
     this.list = [
-      'FINAL DEALS',
-      'MY ACCOUNT',
-      'DH EXCLUSIVE',
-      'LIST YOUR OFFER'
+      {
+        name:'final deals', 
+        img: './assets/img/tabicon_hourglass.png', 
+        url:['/finaldeals']
+      },
+      {
+        name:'my account', 
+        img: './assets/img/tabicon_avatar.png', 
+        url:['/myaccount']
+      },
+      {
+        name:'dh exclusive', 
+        img: './assets/img/tabicon_favorites.png', 
+        url:['/exclusive']
+      },
+      {
+        name:'list your offer', 
+        img: './assets/img/tabicon_contract.png', 
+        url:['/listyouroffer']
+      },
    ];
    
 
