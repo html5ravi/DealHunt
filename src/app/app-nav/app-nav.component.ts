@@ -12,20 +12,38 @@ import { Router } from '@angular/router';
 })
 export class AppNavComponent {
   public icon = 'close'; 
+  list:any;
+  selected :any;
+  menuStack:any;
+
   @ViewChild(MatSidenav) drawer: MatSidenav;
   isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
     .pipe(
       map(result => result.matches)
     );
     
-  constructor(private breakpointObserver: BreakpointObserver, private _router:Router) {}
+  constructor(private breakpointObserver: BreakpointObserver, private _router:Router) {
 
-    ngOnInit() {
-      this._router.events.subscribe(() => {
-        
-          this.drawer.close();
-        
-      });
-    }
-    
+    this.list = [
+      'FINAL DEALS',
+      'MY ACCOUNT',
+      'DH EXCLUSIVE',
+      'LIST YOUR OFFER'
+   ];
+   
+
   }
+  select(item) {
+    if(item === this.selected){
+      this.selected = null;
+    }else{
+      this.selected = item;
+    }
+  };
+
+  ngOnInit() {
+    this._router.events.subscribe(() => {
+      this.drawer.close();
+    });
+  }
+}
