@@ -6,7 +6,7 @@
         </h3>
     </div>
     <ul class="dhLists">
-        <li *ngFor="let item of dhexclusive">
+        <li *ngFor="let item of dhexclusive" (click)="goToDetailPage()">
             <i><img src="{{item.brandlogo}}" /></i>
             <p>{{item.name}}</p>
         </li>

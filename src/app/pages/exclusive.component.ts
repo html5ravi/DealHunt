@@ -23,7 +23,7 @@ export class ExclusiveComponent implements OnInit {
   ngOnInit() {
    
   }
-  goToStore(){
-    
+  goToDetailPage(){
+    this.route.navigate(['listofoffers'])
   }
 }
