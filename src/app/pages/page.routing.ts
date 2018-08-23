@@ -70,4 +70,4 @@ const appRoutes: Routes = [
 ];
 
 
-export const pageRouting = RouterModule.forRoot(appRoutes);
+export const pageRouting = RouterModule.forChild(appRoutes);

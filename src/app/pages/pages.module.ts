@@ -29,7 +29,7 @@ import { RouterModule } from '@angular/router';
 @NgModule({
     imports: [
       CommonModule,
-      pageRouting,      
+      pageRouting,
       DragScrollModule,
       MatTabsModule,
       MatInputModule,
