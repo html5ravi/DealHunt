@@ -42,6 +42,7 @@ import { DragScrollModule } from 'ngx-drag-scroll';
 import { ApiService } from './_services/api.service';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import { RouterModule, Router } from '@angular/router';
 @NgModule({
     imports: [
         BrowserModule,
@@ -56,7 +57,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
         ReactiveFormsModule,
         HttpClientModule,
         routing,
-        BrowserAnimationsModule ,
+        BrowserAnimationsModule,
         ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production }),
         LayoutModule,
         MatToolbarModule,

@@ -1,13 +1,13 @@
 <header>
-  <h1>your reperence</h1>
+    <h1>your reperence</h1>
 </header>
 <ul class="categories">
-  <li class="active" *ngFor="let item of categories">
-    <a href [routerLink]="['/preferences2', item.title]">
-      <i><img src="{{item.categoryicon}}" /></i>
-      <h5>{{item.title}}</h5>
-    </a>
-  </li>
-  <div style="clear:both;"></div>
+    <li class="active" *ngFor="let item of categories">
+        <a href [routerLink]="['/preferences2', item.title]">
+            <i><img src="{{item.categoryicon}}" /></i>
+            <h5>{{item.title}}</h5>
+        </a>
+    </li>
+    <div style="clear:both;"></div>
 </ul>
-<a href [routerLink]="['/preferences2']" class="nextBtn">Next</a>
+<!--<a href [routerLink]="['/preferences2']" class="nextBtn">Next</a>-->

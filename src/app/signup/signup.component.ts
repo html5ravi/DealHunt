@@ -48,12 +48,11 @@ export class SignupComponent implements OnInit {
   get f() { return this.signUp_form.controls; }
 
   onSubmit() {
-        this.submitted = true;
+       /* this.submitted = true;
 
-        // stop here if form is invalid
         if (this.signUp_form.invalid) {
             return;
-        }
+        }*/
 
         // this.loading = true;
         this.router.navigate(['/register2']);

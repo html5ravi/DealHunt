@@ -23,7 +23,7 @@ import { ListOfOffersComponent } from './pages/listOfOffers.component';
 
 const appRoutes: Routes = [
     {   path: '', 
-        canActivate: [AuthGuard], 
+        // canActivate: [AuthGuard], 
         component:MainComponent,
         children:[
             {

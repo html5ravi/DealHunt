@@ -23,12 +23,12 @@ export class Registration2Component implements OnInit {
   get f() { return this.signIn_form.controls; }
 
   onSubmit() {
-        this.submitted = true;
+        /*this.submitted = true;
 
         // stop here if form is invalid
         if (this.signIn_form.invalid) {
             return;
-        }
+        }*/
 
         // this.loading = true;
         this.router.navigate(['/register3']);

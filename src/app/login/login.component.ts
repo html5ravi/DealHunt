@@ -38,9 +38,8 @@ export class LoginComponent implements OnInit {
 
     onSubmit() {
         this.submitted = true;
-
-        // stop here if form is invalid
-        if (this.loginForm.invalid) {
+        this.router.navigate(['/signup']);
+       /* if (this.loginForm.invalid) {
             return;
         }
 
@@ -55,10 +54,10 @@ export class LoginComponent implements OnInit {
                 error => {
                     this.alertService.error(error);
                     this.loading = false;
-                });
+                });*/
     }
 
-    gotoRegister(){
-        this.router.navigate(['/register2']);
-    }
+    // gotoRegister(){
+    //     this.router.navigate(['/register2']);
+    // }
 }
