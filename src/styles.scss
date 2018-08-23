@@ -2,10 +2,84 @@
 
 @import "assets/scss/bootstrap";
 @import "app/app.scss";
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900');
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('assets/fonts/SourceSansPro-Regular.eot');
+    src: url('assets/fonts/SourceSansPro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/SourceSansPro-Regular.woff2') format('woff2'),
+        url('assets/fonts/SourceSansPro-Regular.woff') format('woff'),
+        url('assets/fonts/SourceSansPro-Regular.ttf') format('truetype'),
+        url('assets/fonts/SourceSansPro-Regular.svg#SourceSansPro-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('assets/fonts/SourceSansPro-Bold.eot');
+    src: url('assets/fonts/SourceSansPro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/SourceSansPro-Bold.woff2') format('woff2'),
+        url('assets/fonts/SourceSansPro-Bold.woff') format('woff'),
+        url('assets/fonts/SourceSansPro-Bold.ttf') format('truetype'),
+        url('assets/fonts/SourceSansPro-Bold.svg#SourceSansPro-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('assets/fonts/SourceSansPro-SemiBold.eot');
+    src: url('assets/fonts/SourceSansPro-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/SourceSansPro-SemiBold.woff2') format('woff2'),
+        url('assets/fonts/SourceSansPro-SemiBold.woff') format('woff'),
+        url('assets/fonts/SourceSansPro-SemiBold.ttf') format('truetype'),
+        url('assets/fonts/SourceSansPro-SemiBold.svg#SourceSansPro-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+/* fallback */
+// @font-face {
+//     font-family: 'Material Icons';
+//     font-style: normal;
+//     font-weight: 400;
+//     src: url(https://fonts.gstatic.com/s/materialicons/v41/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
+//   }
+
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(assets/fonts/MaterialIcons-Regular.eot); /* For IE6-8 */
+    src: local('Material Icons'),
+      local('MaterialIcons-Regular'),
+      url(assets/fonts/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2'),
+      url(assets/fonts/MaterialIcons-Regular.woff) format('woff'),
+      url(assets/fonts/MaterialIcons-Regular.ttf) format('truetype');
+  }
+  
+  .material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+  }
 html,
 body {
     height: 100%;
+    font-family: 'Source Sans Pro';
+    margin: 0;
 }
 
 button:focus {
@@ -14,10 +88,7 @@ button:focus {
 .mat-drawer-container{
     background-color: #f5f5f5;
 }
-body {
-    margin: 0;
-    font-family: 'Source Sans Pro', sans-serif;
-}
+
 
 .loginPage p {
     font-size: 15px;
@@ -709,3 +780,5 @@ header h1 {
         padding-bottom: 70px;
     }
 }
+
+
