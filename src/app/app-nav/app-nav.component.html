@@ -47,29 +47,38 @@
 
 </mat-sidenav-container>
 <ul class="bottomTab">
-        <li>
-            <a [routerLink]="['/finaldeals']">
-                <img src="./assets/img/tabicon_hourglass.png" alt="">
-                <h6>final deals</h6>
-            </a>
-        </li>
-        <li>
-            <a [routerLink]="['/myaccount']">
-                <img src="./assets/img/tabicon_avatar.png" alt="">
-                <h6>my account</h6>
-            </a>
-        </li>
-        <li>
-            <a [routerLink]="['/exclusive']">
-                <img src="./assets/img/tabicon_favorites.png" alt="">
-                <h6>dh exclusive</h6>
-            </a>
-        </li>
-        <li>
-            <a [routerLink]="['/listyouroffer']">
-                <img src="./assets/img/tabicon_contract.png" alt="">
-                <h6>list your offer</h6>
-            </a>
-        </li>
-        <div class="clear"></div>
-    </ul>
+    <li>
+        <a [routerLink]="['/finaldeals']" [ngClass]="isActive ? 'activeFD':'' " (click)="isActive = !isActive;">
+            <img src="./assets/img/tabicon_hourglass.png" alt="">
+            <h6>final deals</h6>
+        </a>
+    </li>
+    <li>
+        <a [routerLink]="['/myaccount']" [ngClass]="isActive ? 'activeMA':'' " (click)="isActive = !isActive;">
+            <img src="./assets/img/tabicon_avatar.png" alt="">
+            <h6>my account</h6>
+        </a>
+    </li>
+    <li>
+        <a [routerLink]="['/exclusive']" [ngClass]="isActive ? 'activeDH':'' " (click)="isActive = !isActive;">
+            <img src="./assets/img/tabicon_favorites.png" alt="">
+            <h6>dh exclusive</h6>
+        </a>
+    </li>
+    <li>
+        <a [routerLink]="['/listyouroffer']" [ngClass]="isActive ? 'activeLY':'' " (click)="isActive = !isActive;">
+            <img src="./assets/img/tabicon_contract.png" alt="">
+            <h6>list your offer</h6>
+        </a>
+    </li>
+    <div class="clear"></div>
+</ul>
+
+<!-- <ul class="bottomTab">
+    <li  *ngFor="let n of list" (click)="clicked = (clicked === n ? null :n)">
+        <a [routerLink]="['/finaldeals']" [class.active]="clicked === n">
+            <img src="./assets/img/tabicon_hourglass.png" alt="">
+            <h6>{{n}}</h6>
+        </a>
+    </li>
+</ul> -->
