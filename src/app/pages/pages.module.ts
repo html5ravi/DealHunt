@@ -26,8 +26,13 @@ import { TabContentComponent } from './tab.content.component';
 import { DashboardComponent } from './dashboard.component';
 import { RouterModule } from '@angular/router';
 
+import { AgmCoreModule } from '@agm/core';
+
 @NgModule({
     imports: [
+      AgmCoreModule.forRoot({
+        apiKey: 'AIzaSyB88AxxukgdxByLTjHCbH10pB7y7Goh5e8'
+      }),
       CommonModule,
       pageRouting,
       DragScrollModule,

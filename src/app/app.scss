@@ -42,8 +42,6 @@
     }
 }
 
-
-
 drag-scroll {
     height: auto;
     width: 100%;
@@ -71,6 +69,7 @@ drag-scroll {
         }
     }
 }
+
 
 /*
     Offers Page
@@ -131,7 +130,7 @@ drag-scroll {
         background: #ccc;
     }
     .titleWithLink {
-        .row{
+        .row {
             margin-bottom: 0;
         }
         h2 {
@@ -154,7 +153,7 @@ drag-scroll {
             line-height: .8em;
         }
     }
-    .btn-danger{
+    .btn-danger {
         text-align: center;
     }
 }
@@ -216,4 +215,8 @@ drag-scroll {
         font-weight: normal;
         text-align: left;
     }
+}
+
+agm-map {
+    height: 300px;
 }

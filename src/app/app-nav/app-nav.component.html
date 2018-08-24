@@ -14,10 +14,13 @@
         <mat-nav-list>
             <a mat-list-item href="#" [routerLink]="['/']" class="home"><i><img src="./assets/img/home.png" alt=""></i> Home</a>
             <a mat-list-item href="#" [routerLink]="['/categories']" class="category"><i><img src="./assets/img/categories.png" alt=""></i> Categories ></a>
+            <a mat-list-item href="#" [routerLink]="['/categories']" class="brands"><i><img src="./assets/img/categories.png" alt=""></i> Brands</a>
             <a mat-list-item href="#" [routerLink]="['/finaldeals']" class="finaldeals"><i><img src="./assets/img/final_deals.png" alt=""></i> Final Deals</a>
             <a mat-list-item href="#" [routerLink]="['/exclusive']" class="exclusive"><i><img src="./assets/img/dh.png" alt=""></i> Dealhunt Exclusive</a>
+            <a mat-list-item href="#" [routerLink]="['/listyouroffer']" class="exclusive"><i><img src="./assets/img/dh.png" alt=""></i> List Your Offer</a>
+            <a mat-list-item href="#" [routerLink]="['/myaccount']" class="exclusive"><i><img src="./assets/img/dh.png" alt=""></i> My Account</a>
             <hr>
-            <a mat-list-item href="#" [routerLink]="['/settings']" class="settings"><i><img src="./assets/img/settings.png" alt=""></i> Settings</a>
+            <!--<a mat-list-item href="#" [routerLink]="['/settings']" class="settings"><i><img src="./assets/img/settings.png" alt=""></i> Settings</a>-->
             <a mat-list-item href="#" class="shareapp"><i><img src="./assets/img/share_app.png" alt=""></i> Share The App</a>
             <a mat-list-item href="#" class="rateapp"><i><img src="./assets/img/rate_app.png" alt=""></i> Rate Our App</a>
             <a mat-list-item href="#" [routerLink]="['/helpdesk']" class="helpdesk"><i><img src="./assets/img/help_desk.png" alt=""></i> Helpdesk</a>
@@ -46,7 +49,7 @@
     </mat-sidenav-content>
 
 </mat-sidenav-container>
-<!-- <ul class="bottomTab">
+<!-- <ul class="bottomTab">RB12CB
     <li>
         <a [routerLink]="['/finaldeals']" [ngClass]="isActive ? 'activeFD':'' " (click)="isActive = !isActive;">
             <img src="./assets/img/tabicon_hourglass.png" alt="">
@@ -75,7 +78,7 @@
 </ul> -->
 
 <ul class="bottomTab">
-    <li  *ngFor="let n of list" (click)="clicked = (clicked === n ? null :n)">
+    <li *ngFor="let n of list" (click)="clicked = (clicked === n ? null :n)">
         <a [routerLink]="n.url" [class.active]="clicked === n">
             <img src="{{n.img}}" alt="">
             <h6>{{n.name}}</h6>

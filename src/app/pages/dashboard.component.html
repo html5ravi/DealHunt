@@ -55,7 +55,21 @@
 
     <div class="row">
         <div class="col">
-            <div class="map"></div>
+            <agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom" [disableDefaultUI]="false" [zoomControl]="false" (mapClick)="mapClicked($event)">
+
+                <agm-marker *ngFor="let m of markers; let i = index" (markerClick)="clickedMarker(m.label, i)" [latitude]="m.lat" [longitude]="m.lng" [label]="m.label" [markerDraggable]="m.draggable" (dragEnd)="markerDragEnd(m, $event)">
+
+                    <agm-info-window>
+                        <strong>InfoWindow content</strong>
+                    </agm-info-window>
+
+                </agm-marker>
+
+                <agm-circle [latitude]="lat + 0.3" [longitude]="lng" [radius]="5000" [fillColor]="'red'" [circleDraggable]="true" [editable]="true">
+                </agm-circle>
+
+            </agm-map>
+            <!--<div class="map"></div>-->
         </div>
     </div>
 
@@ -95,15 +109,6 @@
         </drag-scroll>
     </div>
 
-    <!-- <ul class="listOfOffersVertical">
-        <li>
-            <img src="./assets/img/brands/red-chief.png" alt="">
-            <p>Get Upto 50% Off + Extra Rs. 100 off on orders worth Rs. 1000 & Above</p>
-            <h6>Expires on 31st July 2018</h6>
-            <button type="button" class="btn btn-danger">View More</button>
-        </li>
-    </ul> -->
-
     <div class="titleWithLink">
         <div class="row">
             <div class="col">
@@ -127,10 +132,6 @@
                 </div>
                 <div class="col-6">
                     Get Upto 50% Off + Extra Rs. 100 off on orders worth Rs. 1000 & Above
-                    <div class="info">
-                        <img src="./assets/img/icon_time-left.png" alt=""> Offer Ends in 2:30:20 hrs
-                    </div>
-
                 </div>
                 <div class="col">
                     <button type="button" class="btn btn-danger">View More</button>
@@ -144,9 +145,6 @@
                 </div>
                 <div class="col-6">
                     Double Savings. Get Upto 50% off + Extra 10% off on orders above Rs.7999
-                    <div class="info">
-                        <img src="./assets/img/icon_time-left.png" alt=""> Offer Ends in 2:30:20 hrs
-                    </div>
 
                 </div>
                 <div class="col">
@@ -161,10 +159,6 @@
                 </div>
                 <div class="col-6">
                     Myntra Fresh Apparels – Get Upto 70% + Extra 25% OFF Top Brands
-                    <div class="info">
-                        <img src="./assets/img/icon_time-left.png" alt=""> Offer Ends in 2:30:20 hrs
-                    </div>
-
                 </div>
                 <div class="col">
                     <button type="button" class="btn btn-danger">View More</button>
@@ -178,10 +172,6 @@
                 </div>
                 <div class="col-6">
                     Myntra Fresh Apparels – Get Upto 70% + Extra 25% OFF Top Brands
-                    <div class="info">
-                        <img src="./assets/img/icon_time-left.png" alt=""> Offer Ends in 2:30:20 hrs
-                    </div>
-
                 </div>
                 <div class="col">
                     <button type="button" class="btn btn-danger">View More</button>
@@ -195,10 +185,6 @@
                 </div>
                 <div class="col-6">
                     Myntra Fresh Apparels – Get Upto 70% + Extra 25% OFF Top Brands
-                    <div class="info">
-                        <img src="./assets/img/icon_time-left.png" alt=""> Offer Ends in 2:30:20 hrs
-                    </div>
-
                 </div>
                 <div class="col">
                     <button type="button" class="btn btn-danger">View More</button>

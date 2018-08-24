@@ -26,7 +26,11 @@
     }],
     "dataGroups": [{
         "name": "from-api",
-        "urls": ["http://api.sttarter.com/contentsystem/cea94caf3b38196b8f0f5cea05a534c9/brands?orderby_asc=name", "http://api.sttarter.com/contentsystem/cea94caf3b38196b8f0f5cea05a534c9/categories?orderby_asc=title"],
+        "urls": [
+            "https://api.sttarter.com/contentsystem/cea94caf3b38196b8f0f5cea05a534c9/subcategories?orderby_asc=title&associatedcategory.title=",
+            "https://api.sttarter.com/contentsystem/cea94caf3b38196b8f0f5cea05a534c9/brands?orderby_asc=name",
+            "https://api.sttarter.com/contentsystem/cea94caf3b38196b8f0f5cea05a534c9/categories?orderby_asc=title"
+        ],
         "cacheConfig": {
             "strategy": "freshness",
             "maxSize": 15,

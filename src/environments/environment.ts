@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apiUrl: 'http://api.sttarter.com/contentsystem/',
+  apiUrl: 'https://api.sttarter.com/contentsystem/',
   token:'cea94caf3b38196b8f0f5cea05a534c9/'
 };
 
