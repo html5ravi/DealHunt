@@ -17,13 +17,13 @@ export class LoginComponent implements OnInit {
         private route: ActivatedRoute,
         private router: Router,
         private authenticationService: AuthenticationService,
-        private alertService: AlertService) {}
+        private alertService: AlertService) {
+            localStorage.clear();
+        }
 
     ngOnInit() {
         this.loginForm = this.formBuilder.group({
-            username: ['', Validators.required],
-            password:['',Validators.required],
-            email: ['', Validators.required]
+            mobile: ['', Validators.required]
         });
 
         // reset login status
@@ -38,26 +38,55 @@ export class LoginComponent implements OnInit {
 
     onSubmit() {
         this.submitted = true;
-        this.router.navigate(['/signup']);
-       /* if (this.loginForm.invalid) {
+        // this.router.navigate(['/signup']);
+        if (this.loginForm.invalid) {
             return;
         }
 
         this.loading = true;
-        this.authenticationService.login(this.f.username.value,this.f.password.value)
+        this.authenticationService.generateSessionId(this.f.mobile.value)
             .pipe(first())
             .subscribe(
                 data => {
-                    // this.router.navigate([this.returnUrl]);
-                    this.router.navigate(['/signup']); //home
+                    console.log(data)
+                    localStorage.setItem("session_id",JSON.stringify(data.user.sessionId));
+                    localStorage.setItem("mobile",JSON.stringify(this.f.mobile.value));
+                    this.generateOTP(this.f.mobile.value,data.user.sessionId)
                 },
                 error => {
                     this.alertService.error(error);
                     this.loading = false;
-                });*/
-    }
+                });
+        
+                // this.authenticationService.login(this.f.username.value,this.f.password.value)
+                //     .pipe(first())
+                //     .subscribe(
+                //         data => {
+                //             // this.router.navigate([this.returnUrl]);
+                //             this.router.navigate(['/signup']); //home
+                //         },
+                //         error => {
+                //             this.alertService.error(error);
+                //             this.loading = false;
+                //         });
+        }
 
-    // gotoRegister(){
-    //     this.router.navigate(['/register2']);
-    // }
+        generateOTP(mobile,session_id){
+            this.authenticationService.generateOTP(mobile,session_id)
+            .pipe(first())
+            .subscribe(
+                data => {
+                    console.log(data)
+                    if(data.status.success){
+                        this.router.navigate(['/register2']);                        
+                    }
+                },
+                error => {
+                    this.alertService.error(error);
+                    this.loading = false;
+                });
+        }
+
+
+    
 }

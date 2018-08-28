@@ -13,7 +13,7 @@
         <div class="form-group">
             <!--<input type="text" formControlName="username" placeholder="Enter Your Mobile Number" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.username.errors }" />-->
             <mat-form-field class="full-width">
-                <input matInput placeholder="Enter OTP Number" formControlName="otp" type="password" value="452154" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.otp.errors }" />
+                <input matInput placeholder="Enter OTP Number" formControlName="otp" type="password" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.otp.errors }" />
                 <div *ngIf="submitted && f.otp.errors" class="invalid-feedback">
                     <div *ngIf="f.otp.errors.required">OTP Number is required</div>
                 </div>

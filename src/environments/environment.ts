@@ -3,12 +3,14 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false,
-  apiUrl: 'https://api.sttarter.com/contentsystem/',
-  token:'cea94caf3b38196b8f0f5cea05a534c9/'
+  production: false,  
+  authURL:'http://sol-nightly.capillary.in/auth/v1/',
+  apiURL:'http://sol-qa.capillarytech.com/mobile/v2/api/'
 };
 
 /*
+ * apiUrl: 'https://api.sttarter.com/contentsystem/',
+ * token:'cea94caf3b38196b8f0f5cea05a534c9/'
  * In development mode, to ignore zone related error stack frames such as
  * `zone.run`, `zoneDelegate.invokeTask` for easier debugging, you can
  * import the following file, but please comment it out in production mode

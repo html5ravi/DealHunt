@@ -9,6 +9,10 @@ export class UserService {
     constructor(private http: HttpClient) { }
 
     getAll() {
+        return this.http.get<User[]>(`${environment.apiURL}customer/get?expiry_schedule=true`);
+    }
+
+    /*getAll() {
         return this.http.get<User[]>(`${environment.apiUrl}/users`);
     }
 
@@ -26,5 +30,5 @@ export class UserService {
 
     delete(id: number) {
         return this.http.delete(`${environment.apiUrl}/users/` + id);
-    }
+    }*/
 }

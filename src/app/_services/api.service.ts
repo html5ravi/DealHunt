@@ -9,7 +9,7 @@ export class ApiService {
     
     constructor(private http: HttpClient) { }    
 
-    getAll(url:string) {
+    /*getAll(url:string) {
         return this.http.get<any>(`${environment.apiUrl}${environment.token}`+url);
     }
     post(obj:any,url:string){
@@ -26,5 +26,5 @@ export class ApiService {
 
     delete(id: number, url:string) {
         return this.http.delete(`${environment.apiUrl}${environment.token}`+url + id);
-    }
+    }*/
 }
