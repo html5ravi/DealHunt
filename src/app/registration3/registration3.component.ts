@@ -13,6 +13,6 @@ export class Registration3Component implements OnInit {
   ngOnInit() {
   }
   gotoPref(){
-    this.router.navigate(['/preferences1']);
+    this.router.navigate(['/signup']);
   }
 }

@@ -7,16 +7,17 @@ import { first } from 'rxjs/operators';
 import { UserService } from '../_services/user.service';
 
 @Component({
-  selector: 'app-registration2',
-  templateUrl: './registration2.component.html',
-  styleUrls: ['./registration2.component.css']
+  selector: 'app-otp',
+  templateUrl: './otp.component.html',
+  styleUrls: ['./otp.component.css']
 })
-export class Registration2Component implements OnInit {
+export class OtpComponent implements OnInit {
    signIn_form: FormGroup;
    loading = false;
    submitted = false;
    public session_id:any;
    public mobile:any;
+   public errMsg:string;
   constructor( public router:Router, private formBuilder: FormBuilder,private alertService:AlertService, public authenticationService:AuthenticationService, public user:UserService) {
       this.session_id = JSON.parse(localStorage.getItem("session_id"));
       this.mobile = JSON.parse(localStorage.getItem("mobile"));
@@ -54,7 +55,13 @@ export class Registration2Component implements OnInit {
             .pipe(first())
             .subscribe(
                 res => {
-                    console.log(res)
+                    console.log(res.status.success)
+                    if(!res.status.success){
+                        console.log(res)
+                        this.errMsg = res.status.message;
+                        
+                        this.loading = false;
+                    }
                     if(res.status.code==200){
                         localStorage.setItem("token",JSON.stringify(res.auth.token));
                         this.checkUser();
@@ -63,7 +70,7 @@ export class Registration2Component implements OnInit {
                         
                 },
                 error => {
-                    this.alertService.error(error);
+                    console.log(error.status)
                     this.loading = false;
                 });
     }
@@ -73,7 +80,7 @@ export class Registration2Component implements OnInit {
         .subscribe(
             res => {
                 if(res.status.code==500){
-                    this.router.navigate(['/signup']);
+                    this.router.navigate(['/register3']);
                 }
                 if(res.status.code==200){
                     this.router.navigate(['/']);

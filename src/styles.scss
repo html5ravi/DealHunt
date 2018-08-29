@@ -11,9 +11,11 @@ body {
 button:focus {
     outline: none !important;
 }
-.mat-drawer-container{
+
+.mat-drawer-container {
     background-color: #f5f5f5;
 }
+
 body {
     margin: 0;
     font-family: 'Source Sans Pro', sans-serif;
@@ -186,6 +188,14 @@ header h1 {
 .signUpContainer .mat-form-field-infix,
 .signUpContainer .mat-form-field {
     width: 100%;
+}
+
+.errormsg {
+    font-size: 15px;
+    font-weight: 400;
+    color: red;
+    margin: 5px;
+    padding: 0px;
 }
 
 
@@ -522,9 +532,9 @@ header h1 {
                 text-decoration: none;
             }
         }
-        .active{
+        .active {
             background: rgba(55, 84, 98, 0.3215686274509804);
-            h6{
+            h6 {
                 color: #fff;
             }
         }
@@ -556,7 +566,7 @@ header h1 {
         h6 {
             font-size: 12px;
         }
-        .btn-danger{
+        .btn-danger {
             text-align: center;
         }
     }
@@ -607,26 +617,23 @@ header h1 {
         flex-direction: row;
         padding: 0;
         width: 100%;
-        position: relative;     
+        position: relative;
     }
-    
-    app-tab{
+    app-tab {
         width: 50%;
         text-transform: uppercase;
         border-bottom: 1px solid #417188;
         text-align: center;
         padding: 7px 0 0px 0;
-        .active{
-           padding: 0px 0 7px 0;
+        .active {
+            padding: 0px 0 7px 0;
             color: #417188;
             // border-bottom: 1px solid #417188;
-            
         }
     }
-    .door{
+    .door {
         padding: 10px 0;
     }
-    
 }
 
 @media (max-width: 599px) {
@@ -651,8 +658,8 @@ header h1 {
     }
 }
 
-.dhExclusive{
-    .headSection{
+.dhExclusive {
+    .headSection {
         width: 100%;
         margin: 25px 0px;
         text-align: center;
@@ -675,13 +682,12 @@ header h1 {
                 text-align: center;
             }
         }
-        
     }
-    .dhLists{
+    .dhLists {
         margin: 0;
         padding: 0;
         width: 100%;
-        li{
+        li {
             list-style: none;
             width: 30%;
             background: #fff;
@@ -690,22 +696,23 @@ header h1 {
             height: 100px;
             float: left;
             margin: 5px;
-            i{
+            i {
                 display: block;
-                img{
+                img {
                     width: 100%;
                     max-width: 100%;
                 }
             }
-            p{
+            p {
                 margin: 0;
                 font-size: 14px;
             }
         }
     }
 }
-.sidenav-container{
-    .mat-nav-list{
+
+.sidenav-container {
+    .mat-nav-list {
         padding-bottom: 70px;
     }
 }

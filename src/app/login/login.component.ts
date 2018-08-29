@@ -78,7 +78,7 @@ export class LoginComponent implements OnInit {
                 data => {
                     console.log(data)
                     if(data.status.success){
-                        this.router.navigate(['/register2']);                        
+                        this.router.navigate(['/otp']);
                     }
                 },
                 error => {

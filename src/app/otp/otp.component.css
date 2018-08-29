@@ -3,7 +3,7 @@
     height: 100%;
 }
 
-.signin img {
+.signin .img {
     width: 100px;
     margin-top: 50px;
 }
@@ -37,6 +37,15 @@
     z-index: 99;
 }
 
+.signin .btnCont img {
+    height: 20px;
+    width: 20px;
+}
+
 .btnCont .btn {
     width: 100%;
+}
+
+.signin .otp {
+    font-size: 30px;
 }

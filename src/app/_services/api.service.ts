@@ -6,25 +6,29 @@ import { environment } from '../../environments/environment';
 
 @Injectable()
 export class ApiService {
+        // public headers = new HttpHeaders(); 
+    constructor(private http: HttpClient) {
+        
+        
+     }    
     
-    constructor(private http: HttpClient) { }    
 
-    /*getAll(url:string) {
-        return this.http.get<any>(`${environment.apiUrl}${environment.token}`+url);
+    getAll(url:string) {
+        return this.http.get<any>(`${environment.sttarterURL}${environment.token}`+url);
     }
     post(obj:any,url:string){
-        return this.http.post(`${environment.apiUrl}${environment.token}`+url, obj);
+        return this.http.post(`${environment.sttarterURL}${environment.token}`+url, obj);
     }
 
     getById(id: number,url:string) {
-        return this.http.get(`${environment.apiUrl}${environment.token}`+url + id);
+        return this.http.get(`${environment.sttarterURL}${environment.token}`+url + id);
     }
 
     update(obj:any,url:string) {
-        return this.http.put(`${environment.apiUrl}${environment.token}`+url + obj.id, obj);
+        return this.http.put(`${environment.sttarterURL}${environment.token}`+url + obj.id, obj);
     }
 
     delete(id: number, url:string) {
-        return this.http.delete(`${environment.apiUrl}${environment.token}`+url + id);
-    }*/
+        return this.http.delete(`${environment.sttarterURL}${environment.token}`+url + id);
+    }
 }

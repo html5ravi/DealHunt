@@ -23,7 +23,7 @@ import { AppNavComponent } from './app-nav/app-nav.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule } from '@angular/material';
 import { MainComponent } from './main/main.component';
-import { Registration2Component } from './registration2/registration2.component';
+import { OtpComponent } from './otp/otp.component';
 import { Registration3Component } from './registration3/registration3.component';
 import { SignupComponent } from './signup/signup.component';
 import { Preferences1Component } from './preferences1/preferences1.component';
@@ -80,7 +80,7 @@ import { AgmCoreModule } from '@agm/core';
         MainComponent,
         SignupComponent,
         Registration3Component,
-        Registration2Component,
+        OtpComponent,
         Preferences1Component,
         Preferences2Component        
         ],
