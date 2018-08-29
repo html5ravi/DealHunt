@@ -10,11 +10,11 @@ export class CategoriesComponent implements OnInit {
   public categories: any;
   constructor(public http:HttpClient, public api: ApiService) {
 
-    this.api.getAll("categories?orderby_asc=title").subscribe(
-      res=>{
-        this.categories = res.data;
-      }
-    )
+    // this.api.getAll("categories?orderby_asc=title").subscribe(
+    //   res=>{
+    //     this.categories = res.data;
+    //   }
+    // )
 
    }
 

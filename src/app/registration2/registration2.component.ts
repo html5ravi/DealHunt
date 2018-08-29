@@ -42,7 +42,7 @@ export class Registration2Component implements OnInit {
         this.validateOTP(this.mobile,this.session_id,this.f.otp.value);
         
 
-        // this.loading = true;
+        this.loading = true;
         // this.router.navigate(['/register3']);
     }
 
@@ -58,6 +58,7 @@ export class Registration2Component implements OnInit {
                     if(res.status.code==200){
                         localStorage.setItem("token",JSON.stringify(res.auth.token));
                         this.checkUser();
+                        this.loading = true;
                     }
                         
                 },

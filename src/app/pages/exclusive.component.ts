@@ -12,12 +12,12 @@ import { ApiService } from '../_services/api.service';
 export class ExclusiveComponent implements OnInit {
   public dhexclusive: any;
   constructor(private route:Router, public http:HttpClient, public api: ApiService) { 
-    this.api.getAll("brands?orderby_asc=name").subscribe(
-      res=>{
-        this.dhexclusive = res.data;
-        console.log("dhExclusive", res);
-      }
-    )
+    // this.api.getAll("brands?orderby_asc=name").subscribe(
+    //   res=>{
+    //     this.dhexclusive = res.data;
+    //     console.log("dhExclusive", res);
+    //   }
+    // )
   }
 
   ngOnInit() {

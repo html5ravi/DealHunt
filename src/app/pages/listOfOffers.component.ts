@@ -9,12 +9,12 @@ import { ApiService } from '../_services/api.service';
 export class ListOfOffersComponent implements OnInit {
   public banners: any;
   constructor(public http:HttpClient, public api: ApiService) { 
-    this.api.getAll("advertisements?orderby_dsc=score&").subscribe(
-      res=>{
-        this.banners = res.data;
-        console.log("Banners",res)
-      }
-    )
+    // this.api.getAll("advertisements?orderby_dsc=score&").subscribe(
+    //   res=>{
+    //     this.banners = res.data;
+    //     console.log("Banners",res)
+    //   }
+    // )
 
   }
 

@@ -12,11 +12,11 @@ export class Preferences1Component implements OnInit {
 
   constructor(public http:HttpClient, public api: ApiService ) { 
 
-    this.api.getAll("categories?orderby_asc=title").subscribe(
-      res=>{
-        this.categories = res.data;
-      }
-    )
+    // this.api.getAll("categories?orderby_asc=title").subscribe(
+    //   res=>{
+    //     this.categories = res.data;
+    //   }
+    // )
 
   }
 

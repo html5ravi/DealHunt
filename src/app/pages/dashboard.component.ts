@@ -22,12 +22,12 @@ export class DashboardComponent implements OnInit {
   lat: number = 51.673858;
   lng: number = 7.815982;
   constructor(public http:HttpClient, public api: ApiService) { 
-    this.api.getAll("advertisements?orderby_dsc=score&").subscribe(
-      res=>{
-        this.banners = res.data;
-        console.log("Banners",res)
-      }
-    )
+    // this.api.getAll("advertisements?orderby_dsc=score&").subscribe(
+    //   res=>{
+    //     this.banners = res.data;
+    //     console.log("Banners",res)
+    //   }
+    // )
 
   }
 
