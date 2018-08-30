@@ -2,8 +2,8 @@
     <h1>your preferences</h1>
 </header>
 <ul class="categories">
-    <li class="active" *ngFor="let item of categories">
-        <a href [routerLink]="['/preferences2', item.title]">
+    <li *ngFor="let item of categories" (click)="addPplToGroup(item)" [ngClass]="{'active': item.active}">
+        <a>
             <i><img src="{{item.categoryicon}}" /></i>
             <h5>{{item.title}}</h5>
         </a>

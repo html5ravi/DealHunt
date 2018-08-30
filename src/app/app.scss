@@ -184,6 +184,9 @@ drag-scroll {
             text-transform: uppercase;
             color: #aaaaaa;
         }
+        &.active {
+            background: #f2f2f2;
+        }
     }
 }
 
