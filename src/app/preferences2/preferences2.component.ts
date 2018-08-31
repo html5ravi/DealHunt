@@ -20,12 +20,12 @@ export class Preferences2Component implements OnInit {
     this.route.params.subscribe(
       res=>{
         console.log(res)
-        // this.api.getAll("subcategories?orderby_asc=title&associatedcategory.title=" + res.title).subscribe(
-        //   res=>{
-        //     this.subCategories = res.data;
-        //     console.log("sub", res);
-        //   }
-        // )
+        this.api.getAll("subcategories?orderby_asc=title&associatedcategory.title=" + res.title).subscribe(
+          res=>{
+            this.subCategories = res.data;
+            console.log("sub", res);
+          }
+        )
       }
     )
   }
