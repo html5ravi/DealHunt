@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { pageRouting } from './page.routing';
 import { CategoriesComponent } from './categories.component';
+import { ReactiveFormsModule }    from '@angular/forms';
 // import { HomeComponent } from '../home/home.component';
 import { FinalDealsComponent } from './final-deals.component';
 import { ExclusiveComponent } from './exclusive.component';
@@ -25,7 +26,7 @@ import { TabComponent } from './tab.component';
 import { TabContentComponent } from './tab.content.component';
 import { DashboardComponent } from './dashboard.component';
 import { RouterModule } from '@angular/router';
-
+import {MatCheckboxModule} from '@angular/material/checkbox';
 import { AgmCoreModule } from '@agm/core';
 
 @NgModule({
@@ -34,6 +35,8 @@ import { AgmCoreModule } from '@agm/core';
         apiKey: 'AIzaSyB88AxxukgdxByLTjHCbH10pB7y7Goh5e8'
       }),
       CommonModule,
+      ReactiveFormsModule,
+      MatCheckboxModule,
       pageRouting,
       DragScrollModule,
       MatTabsModule,
