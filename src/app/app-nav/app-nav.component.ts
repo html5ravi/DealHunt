@@ -3,7 +3,8 @@ import { BreakpointObserver, Breakpoints, BreakpointState } from '@angular/cdk/l
 import {MatSidenav} from '@angular/material/sidenav';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
-import { Router } from '@angular/router';
+import { Router, ActivatedRoute, Routes, ActivatedRouteSnapshot } from '@angular/router';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-nav',
@@ -21,8 +22,14 @@ export class AppNavComponent {
     .pipe(
       map(result => result.matches)
     );
+    public title:Observable<string>;
+  constructor(private breakpointObserver: BreakpointObserver, private _router:Router,public route:ActivatedRoute, public pageTitle:Title) {
     
-  constructor(private breakpointObserver: BreakpointObserver, private _router:Router) {
+    // this.route.data.
+    
+    
+    
+    
 
     this.list = [
       {
@@ -57,9 +64,19 @@ export class AppNavComponent {
     }
   };
 
+  // public ngOnInit() {
+  //    this.routeData= this.route.data.subscribe((data) => {
+  //      this.name = data.title;
+  //    });
+  // }
+
   ngOnInit() {
-    this._router.events.subscribe(() => {
+    this._router.events.subscribe( res => {
       this.drawer.close();
+      console.log(res)
     });
+    this.route.data.subscribe((data) => {
+       console.log(data.title);
+     });
   }
 }

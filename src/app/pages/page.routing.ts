@@ -28,43 +28,53 @@ const appRoutes: Routes = [
                 },
                 {
                     path:'categories',
-                    component:CategoriesComponent
+                    component:CategoriesComponent,
+                    data:{title:'Categories'}
                 },
                 {
                     path:'finaldeals',
-                    component:FinalDealsComponent
+                    component:FinalDealsComponent,
+                    data:{title:'Final Deals'}
                 },
                 {
                     path:'myaccount',
-                    component:MyAccountComponent
+                    component:MyAccountComponent,
+                    data:{title:'My Account'}
                 },
                 {
                     path:'exclusive',
-                    component:ExclusiveComponent
+                    component:ExclusiveComponent,
+                    data:{title:'DH Exclusive'}
                 },
                 {
                     path:'listofoffers',
-                    component:ListOfOffersComponent
+                    component:ListOfOffersComponent,
+                    data:{title:'List Of Offers'}
                 },
                 {
                     path:'listyouroffer',
-                    component:ListYourOfferComponent
+                    component:ListYourOfferComponent,
+                    data:{title:'List Your Offer'}
                 },
                 {
                     path:'settings',
-                    component:SettingsComponent
+                    component:SettingsComponent,
+                    data:{title:'Settings'}
                 },
                 {
                     path:'helpdesk',
-                    component:HelpdeskComponent
+                    component:HelpdeskComponent,
+                    data:{title:'Helpdesk'}
                 },
                 {
                     path:'brands',
-                    component:BrandsComponent
+                    component:BrandsComponent,
+                    data:{title:'Brands'}
                 },
                 {
                     path:'brand-detail',
-                    component:BrandDetailsComponent
+                    component:BrandDetailsComponent,
+                    data:{title:'Brand Detail'}
                 }
             ]}
 ];
