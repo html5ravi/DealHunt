@@ -3,7 +3,7 @@ import { BreakpointObserver, Breakpoints, BreakpointState } from '@angular/cdk/l
 import {MatSidenav} from '@angular/material/sidenav';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
-import { Router, ActivatedRoute, Routes, ActivatedRouteSnapshot } from '@angular/router';
+import { Router, ActivatedRoute, Routes, ActivatedRouteSnapshot,RoutesRecognized } from '@angular/router';
 import { Title } from '@angular/platform-browser';
 
 @Component({
@@ -16,7 +16,7 @@ export class AppNavComponent {
   list:any;
   selected :any;
   menuStack:any;
-
+  routeData:any;
   @ViewChild(MatSidenav) drawer: MatSidenav;
   isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
     .pipe(
@@ -64,19 +64,28 @@ export class AppNavComponent {
     }
   };
 
-  // public ngOnInit() {
-  //    this.routeData= this.route.data.subscribe((data) => {
-  //      this.name = data.title;
+ 
+
+  // ngOnInit() {
+  //   this._router.events.subscribe( res => {
+  //     this.drawer.close();
+  //     console.log(res)
+  //   });
+  //   this.route.data.subscribe((data) => {
+  //      console.log(data.title);
   //    });
   // }
 
-  ngOnInit() {
-    this._router.events.subscribe( res => {
-      this.drawer.close();
-      console.log(res)
-    });
-    this.route.data.subscribe((data) => {
-       console.log(data.title);
+
+  public ngOnInit() {
+     this.routeData= this._router.events.subscribe((data) => {
+       this.drawer.close();
+       if (data instanceof RoutesRecognized) {
+        let name = data.state.root.firstChild.data.title;        
+       }
      });
+     console.log(this.routeData)
   }
+
+
 }

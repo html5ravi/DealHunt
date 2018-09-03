@@ -81,11 +81,6 @@ const appRoutes: Routes = [
                     path:'notification',
                     component:NotificationComponent,
                     data:{title:'Notification'}
-                },
-                {
-                    component:BrandDetailsComponent,
-                    data:{title:'Brand Detail'}
-
                 }
             ]}
 ];
