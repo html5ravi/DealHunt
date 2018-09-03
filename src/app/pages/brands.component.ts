@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import { ApiService } from '../_services/api.service';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-brands',
@@ -9,13 +10,16 @@ import { ApiService } from '../_services/api.service';
 })
 export class BrandsComponent implements OnInit {
   public brands: any;
-  constructor(private route:Router, public http:HttpClient, public api: ApiService) { 
-    // this.api.getAll("brands?orderby_asc=name").subscribe(
-    //   res=>{
-    //     this.brands = res.data;
-    //     console.log("Brands", res);
-    //   }
-    // )
+  public loading:boolean =true;
+  constructor(private route:Router, public http:HttpClient, public api: ApiService,public pageTitle:Title) { 
+    this.pageTitle.setTitle("Brands");
+    this.api.getAll("brands?orderby_asc=name").subscribe(
+      res=>{
+        this.brands = res.data;
+        console.log("Brands", res);
+        this.loading = false;
+      }
+    )
   }
 
   ngOnInit() {

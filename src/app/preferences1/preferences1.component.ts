@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { ApiService } from '../_services/api.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-preferences1',
@@ -11,7 +12,7 @@ export class Preferences1Component implements OnInit {
   public categories: any;
   public status: boolean = false;
   public tempArr:any = [];
-  constructor(public http:HttpClient, public api: ApiService ) { 
+  constructor(public http:HttpClient, public api: ApiService, public router:Router ) { 
 
     this.api.getAll("categories?orderby_asc=title").subscribe(
       res=>{
@@ -26,8 +27,8 @@ export class Preferences1Component implements OnInit {
 
   addPplToGroup(obj){
     obj.active = !obj.active;
-    obj.selected = !obj.selected;
-    if(obj.selected){
+    //obj.selected = !obj.selected;
+    if(obj.active){
       this.tempArr.push(obj);      
     }else{
       this.tempArr.splice(this.tempArr.findIndex(function(i){
@@ -36,6 +37,17 @@ export class Preferences1Component implements OnInit {
     }
     console.log(this.tempArr)
   }
+
+  
+  gotoChooseSubCategory(){    
+    if(this.tempArr.length > 0){
+
+      this.router.navigate(['/preferences2',this.tempArr[0].title]);
+    }else{
+      this.router.navigate(['/']);
+    }
+  }
+
 
 }
 
