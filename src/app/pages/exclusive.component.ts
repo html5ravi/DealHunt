@@ -11,13 +11,16 @@ import { ApiService } from '../_services/api.service';
 })
 export class ExclusiveComponent implements OnInit {
   public dhexclusive: any;
+  public loading:boolean=true;
   constructor(private route:Router, public http:HttpClient, public api: ApiService) { 
-    // this.api.getAll("brands?orderby_asc=name").subscribe(
-    //   res=>{
-    //     this.dhexclusive = res.data;
-    //     console.log("dhExclusive", res);
-    //   }
-    // )
+    this.api.getAll("brands?orderby_asc=name").subscribe(
+      res=>{
+        this.dhexclusive = res.data;
+        this.loading = false;
+        console.log("dhExclusive", res);
+      },
+      err=>{},
+    )
   }
 
   ngOnInit() {

@@ -9,13 +9,15 @@ import { ApiService } from '../_services/api.service';
 })
 export class BrandsComponent implements OnInit {
   public brands: any;
+  public loading:boolean =true;
   constructor(private route:Router, public http:HttpClient, public api: ApiService) { 
-    // this.api.getAll("brands?orderby_asc=name").subscribe(
-    //   res=>{
-    //     this.brands = res.data;
-    //     console.log("Brands", res);
-    //   }
-    // )
+    this.api.getAll("brands?orderby_asc=name").subscribe(
+      res=>{
+        this.brands = res.data;
+        console.log("Brands", res);
+        this.loading = false;
+      }
+    )
   }
 
   ngOnInit() {
