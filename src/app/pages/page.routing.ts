@@ -11,6 +11,7 @@ import { BrandDetailsComponent } from './brandDetails.component';
 import { MyAccountComponent } from './myAccount.component';
 import { ListYourOfferComponent } from './listYourOffer.component';
 import { ListOfOffersComponent } from './listOfOffers.component';
+import { NotificationComponent } from './notification.component';
 
 const appRoutes: Routes = [
         {
@@ -65,6 +66,10 @@ const appRoutes: Routes = [
                 {
                     path:'brand-detail',
                     component:BrandDetailsComponent
+                },
+                {
+                    path:'notification',
+                    component:NotificationComponent
                 }
             ]}
 ];

@@ -27,6 +27,7 @@ import { DashboardComponent } from './dashboard.component';
 import { RouterModule } from '@angular/router';
 
 import { AgmCoreModule } from '@agm/core';
+import { NotificationComponent } from './notification.component';
 
 @NgModule({
     imports: [
@@ -57,7 +58,8 @@ import { AgmCoreModule } from '@agm/core';
       ListYourOfferComponent,
       Tab3Component,
       TabComponent,
-      TabContentComponent
+      TabContentComponent,
+      NotificationComponent
 ],
     exports:[
       DashboardComponent,

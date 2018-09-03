@@ -36,16 +36,6 @@ export class Preferences1Component implements OnInit {
     }
     console.log(this.tempArr)
   }
-  
-  // removePplFromGroup(obj){
-  //   obj.selected = !obj.selected;
-  //   if(!obj.selected){
-  //     this.tempArr.splice(this.tempArr.findIndex(function(i){
-  //         return i._id === obj._id;
-  //     }), 1);
-      
-  //   }
-  // }
 
 }
 
