@@ -37,6 +37,7 @@ export class Preferences1Component implements OnInit {
     }
     console.log(this.tempArr)
   }
+
   
   gotoChooseSubCategory(){    
     if(this.tempArr.length > 0){
@@ -46,6 +47,7 @@ export class Preferences1Component implements OnInit {
       this.router.navigate(['/']);
     }
   }
+
 
 }
 
