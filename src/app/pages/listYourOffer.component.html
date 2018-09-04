@@ -1,42 +1,63 @@
 <section class="listYourOffer">
-    <form>
+    <form [formGroup]="lyoForm" (ngSubmit)="onSubmit()">
         <div class="form-group">
             <mat-form-field class="full-width">
-                <input matInput placeholder="Brand Name" formControlName="brandName" type="text" />
+                <input matInput placeholder="Brand Name" formControlName="brandName" type="text" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.brandName.errors }" />
+                <div *ngIf="submitted && f.brandName.errors" class="invalid-feedback">
+                    <div *ngIf="f.brandName.errors.required">Brand Name is required</div>
+                </div>
             </mat-form-field>
         </div>
         <div class="form-group">
             <mat-form-field class="full-width">
-                <input matInput placeholder="Offer Name" formControlName="OfferName" type="text" />
+                <input matInput placeholder="Offer Name" formControlName="offerName" type="text" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.offerName.errors }" />
+                <div *ngIf="submitted && f.offerName.errors" class="invalid-feedback">
+                    <div *ngIf="f.offerName.errors.required">Offer Name is required</div>
+                </div>
             </mat-form-field>
         </div>
         <div class="form-group">
             <mat-form-field class="full-width">
-                <input matInput placeholder="Offer Validity" formControlName="OfferValidity" type="text" />
+                <input matInput placeholder="Offer Validity" formControlName="offerValidity" type="text" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.offerValidity.errors }" />
+                <div *ngIf="submitted && f.offerValidity.errors" class="invalid-feedback">
+                    <div *ngIf="f.offerValidity.errors.required">Offer Validity is required</div>
+                </div>
             </mat-form-field>
         </div>
         <div class="form-group">
             <mat-form-field class="full-width">
-                <textarea matInput placeholder="Offer Description" formControlName="OfferDescription"></textarea>
+                <textarea matInput placeholder="Offer Description" formControlName="offerDescription" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.offerDescription.errors }"></textarea>
+                <div *ngIf="submitted && f.offerDescription.errors" class="invalid-feedback">
+                    <div *ngIf="f.offerDescription.errors.required">Offer Description is required</div>
+                </div>
             </mat-form-field>
         </div>
         <div class="form-group">
             <mat-form-field class="full-width">
-                <textarea matInput placeholder="Offer T&C" formControlName="OfferTc"></textarea>
+                <textarea matInput placeholder="Offer T&C" formControlName="offerTc" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.offerTc.errors }"></textarea>
+                <div *ngIf="submitted && f.offerTc.errors" class="invalid-feedback">
+                    <div *ngIf="f.offerTc.errors.required">Offer T&C is required</div>
+                </div>
             </mat-form-field>
         </div>
         <div class="form-group">
             <mat-form-field class="full-width">
-                <input matInput placeholder="Contact Name" formControlName="contactName" type="text" />
+                <input matInput placeholder="Contact Name" formControlName="contactName" type="text" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.contactName.errors }" />
+                <div *ngIf="submitted && f.contactName.errors" class="invalid-feedback">
+                    <div *ngIf="f.contactName.errors.required">Contact Name is required</div>
+                </div>
             </mat-form-field>
         </div>
         <div class="form-group">
             <mat-form-field class="full-width">
-                <input matInput placeholder="Contact Number" formControlName="contactNumber" type="text" />
+                <input matInput placeholder="Contact Number" formControlName="contactNumber" type="text" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.contactNumber.errors }" />
+                <div *ngIf="submitted && f.contactNumber.errors" class="invalid-feedback">
+                    <div *ngIf="f.contactNumber.errors.required">Contact Number is required</div>
+                </div>
             </mat-form-field>
         </div>
         <div class="form-group text-center">
-            <button type="button" class="btn btn-danger">create offer</button>
+            <button type="submit" class="btn btn-danger">create offer</button>
         </div>
     </form>
 </section>

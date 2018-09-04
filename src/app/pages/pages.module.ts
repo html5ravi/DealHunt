@@ -2,7 +2,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { pageRouting } from './page.routing';
 import { CategoriesComponent } from './categories.component';
-import { ReactiveFormsModule }    from '@angular/forms';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+
 // import { HomeComponent } from '../home/home.component';
 import { FinalDealsComponent } from './final-deals.component';
 import { ExclusiveComponent } from './exclusive.component';
@@ -36,6 +37,7 @@ import { NotificationComponent } from './notification.component';
         apiKey: 'AIzaSyB88AxxukgdxByLTjHCbH10pB7y7Goh5e8'
       }),
       CommonModule,
+      FormsModule,
       ReactiveFormsModule,
       MatCheckboxModule,
       pageRouting,

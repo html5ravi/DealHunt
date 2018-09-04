@@ -2,8 +2,8 @@ import { Component,ViewChild } from '@angular/core';
 import { BreakpointObserver, Breakpoints, BreakpointState } from '@angular/cdk/layout';
 import {MatSidenav} from '@angular/material/sidenav';
 import { Observable } from 'rxjs';
-import { map } from 'rxjs/operators';
-import { Router, ActivatedRoute, Routes, ActivatedRouteSnapshot,RoutesRecognized } from '@angular/router';
+import { map,filter } from 'rxjs/operators';
+import { Router, ActivatedRoute, Routes, ActivatedRouteSnapshot,RoutesRecognized,NavigationEnd,NavigationStart } from '@angular/router';
 import { Title } from '@angular/platform-browser';
 
 @Component({
@@ -23,8 +23,8 @@ export class AppNavComponent {
       map(result => result.matches)
     );
     public title:Observable<string>;
-  constructor(private breakpointObserver: BreakpointObserver, private _router:Router,public route:ActivatedRoute, public pageTitle:Title) {
-    
+  constructor(private breakpointObserver: BreakpointObserver, private _router:Router,public activatedRoute:ActivatedRoute, public pageTitle:Title) {
+   
     // this.route.data.
     
     
@@ -66,26 +66,29 @@ export class AppNavComponent {
 
  
 
-  // ngOnInit() {
-  //   this._router.events.subscribe( res => {
-  //     this.drawer.close();
-  //     console.log(res)
-  //   });
-  //   this.route.data.subscribe((data) => {
-  //      console.log(data.title);
-  //    });
-  // }
-
-
-  public ngOnInit() {
-     this.routeData= this._router.events.subscribe((data) => {
-       this.drawer.close();
-       if (data instanceof RoutesRecognized) {
-        let name = data.state.root.firstChild.data.title;        
-       }
-     });
-     console.log(this.routeData)
+  ngOnInit() {
+    this._router.events.subscribe( res => {
+      this.drawer.close();
+      console.log(res)
+    });
+    
   }
+
+
+  // public ngOnInit() {
+  //   // this._router.events
+
+  //    this.routeData= this._router.events.subscribe((data) => {
+  //      this.drawer.close();
+  //      console.log(data)
+  //      if (data instanceof NavigationStart) {
+  //        console.log(data.url)
+  //       let name = data.state.root.firstChild.children[0].data.title;   
+  //       console.log(name)     
+  //      }
+  //    });
+    
+  // }
 
 
 }
