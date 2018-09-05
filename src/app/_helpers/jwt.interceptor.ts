@@ -12,7 +12,7 @@ export class JwtInterceptor implements HttpInterceptor {
         let token = JSON.parse(localStorage.getItem("token"));
         let mobile = JSON.parse(localStorage.getItem("mobile"));
         
-        if(token && !env.sttarterURL) {
+        /*if(token && !env.sttarterURL) {
             request = request.clone({
                 setHeaders: { 
                     'cap_authorization':token,
@@ -28,6 +28,24 @@ export class JwtInterceptor implements HttpInterceptor {
                     'Content-Type':'application/json; charset=utf-8'
                 }
             });
+        }*/
+        
+        if(request.url.includes(env.authURL || env.sttarterURL)){
++            request = request.clone({
++                setHeaders: {                     
++                    'Content-Type':'application/json; charset=utf-8'
++                }
++            });
++        }else if(request.url.includes(env.apiURL)){
+             request = request.clone({
+                 setHeaders: { 
+                     'cap_authorization':token,
+                     'cap_mobile':mobile,
+                     'cap_device_id':mobile,
+                     'cap_brand':'DEALHUNTDEMO',
+                     'Content-Type':'application/json; charset=utf-8'
+                 }
+             });
         }
 
         return next.handle(request);
