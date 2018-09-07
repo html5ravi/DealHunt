@@ -12,19 +12,20 @@ import { MyAccountComponent } from './myAccount.component';
 import { ListYourOfferComponent } from './listYourOffer.component';
 import { ListOfOffersComponent } from './listOfOffers.component';
 import { NotificationComponent } from './notification.component';
+import { AuthGuard } from '../_guards/auth.guard';
 
 const appRoutes: Routes = [
         {
             path: '', 
-            // canActivate: [AuthGuard], 
+            canActivate: [AuthGuard], 
             component:MainComponent,
             children:[
-                // {
-                //     path:'',
-                //     redirectTo:'home',
-                //     pathMatch:'full'
-                // },
-                {   path: '', 
+                {
+                    path:'',
+                    redirectTo:'dashboard',
+                    pathMatch:'full'
+                },
+                {   path: 'dashboard', 
                     component:HomeComponent,        
                 },
                 {

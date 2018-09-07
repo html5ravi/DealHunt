@@ -5,6 +5,7 @@ import { Observable } from 'rxjs';
 import { map,filter } from 'rxjs/operators';
 import { Router, ActivatedRoute, Routes, ActivatedRouteSnapshot,RoutesRecognized,NavigationEnd,NavigationStart } from '@angular/router';
 import { Title } from '@angular/platform-browser';
+import {ApiService} from '../_services/api.service'
 
 @Component({
   selector: 'app-nav',
@@ -23,10 +24,11 @@ export class AppNavComponent {
       map(result => result.matches)
     );
     public title:Observable<string>;
-  constructor(private breakpointObserver: BreakpointObserver, private _router:Router,public activatedRoute:ActivatedRoute, public pageTitle:Title) {
+    public userDetail:any;
+  constructor(private breakpointObserver: BreakpointObserver, private _router:Router,public activatedRoute:ActivatedRoute, public pageTitle:Title, public apiService:ApiService) {
    
-    // this.route.data.
-    
+    this.userDetail = JSON.parse(localStorage.getItem("currentUser"));
+   console.log(this.userDetail)
     
     
     
@@ -71,7 +73,14 @@ export class AppNavComponent {
       this.drawer.close();
       console.log(res)
     });
+    this.getUserDetail();
     
+  }
+
+  getUserDetail(){
+    this.apiService.getCustomerDetail().subscribe(res =>{
+      this.userDetail = res.customers.customer[0];
+    })
   }
 
 

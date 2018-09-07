@@ -26,6 +26,7 @@ export class DashboardComponent implements OnInit {
   public nearBy: any;
   zoom: number = 8;
   public tempArrs:any = [];
+  public userDetail = [];
 
   
   // initial center position for the map
@@ -101,9 +102,12 @@ export class DashboardComponent implements OnInit {
     console.log('dragEnd', m, $event);
   }
  
-  
-  
-  
+  getUserDetail(){
+    this.api.getCustomerDetail().subscribe(res =>{
+      this.userDetail = res.customers.customer[0];
+      console.log(this.userDetail, 'user darteywqjkdh')
+    })
+  }
   
 
 }

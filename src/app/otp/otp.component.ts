@@ -83,9 +83,11 @@ export class OtpComponent implements OnInit {
                     this.router.navigate(['/register3']);
                 }
                 if(res.status.code==200){
-                    this.router.navigate(['/']);
+                    console.log(res.customers.customer[0])
+                    localStorage.setItem("currentUser",JSON.stringify(res.customers.customer[0]));
+                    this.router.navigate(['/dashboard']);
                 }
-                // console.log(res)
+                console.log(res)
             }
         )
     }

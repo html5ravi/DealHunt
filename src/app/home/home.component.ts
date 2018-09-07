@@ -15,7 +15,7 @@ export class HomeComponent implements OnInit {
         /*if(!this.currentUser){
             this.router.navigate(['/login']);
         }else{
-            this.router.navigate(['/']);
+            this.router.navigate(['/dashboard']);
         }*/
     }
 

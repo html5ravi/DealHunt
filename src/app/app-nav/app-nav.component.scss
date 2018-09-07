@@ -38,15 +38,15 @@ mat-nav-list {
             margin-bottom: 15px;
             width: 60px;
             margin-top: 20px;
-            border: 1px solid gray;
+            border: 0px solid fff;
             border-radius: 50%;
             overflow: hidden;
-            background: #f00;
+            background: #fff;
         }
         .profileDetail {
             text-transform: uppercase;
             font-size: 16px;
-            margin-bottom: 20px;
+            margin-left: 20px;
         }
     }
 }
@@ -54,7 +54,8 @@ mat-nav-list {
 .sidenav {
     width: 300px;
     .mat-toolbar-single-row {
-        flex-direction: column;
+        background: linear-gradient(#d83131, #c62222) !important;
+        flex-direction: inherit;
         align-items: baseline !important;
     }
 }
@@ -63,8 +64,8 @@ mat-nav-list {
     height: auto;
 }
 
-.headerMenuIcons{
-    .mat-icon{
+.headerMenuIcons {
+    .mat-icon {
         margin: 0 0 0 8px;
     }
 }

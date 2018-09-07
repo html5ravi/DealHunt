@@ -43,7 +43,7 @@ import { ApiService } from './_services/api.service';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { RouterModule, Router } from '@angular/router';
-import { AgmCoreModule } from '@agm/core';
+// import { AgmCoreModule } from '@agm/core';
 @NgModule({
     imports: [
        

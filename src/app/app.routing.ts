@@ -38,7 +38,7 @@ const appRoutes: Routes = [
     { path: 'register3', component: Registration3Component },
     { path: 'signup', component: SignupComponent },
     { path: 'preferences1', component: Preferences1Component },
-    { path: 'preferences2/:title', component: Preferences2Component },
+    { path: 'preferences2', component: Preferences2Component },
     // otherwise redirect to home
     { path: '**', redirectTo: '' }
 ];

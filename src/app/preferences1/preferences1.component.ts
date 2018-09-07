@@ -41,10 +41,15 @@ export class Preferences1Component implements OnInit {
   
   gotoChooseSubCategory(){    
     if(this.tempArr.length > 0){
-
-      this.router.navigate(['/preferences2',this.tempArr[0].title]);
+      let arr=[];
+      this.tempArr.forEach(function(val,key){
+        arr.push(val.title);
+        // console.log(JSON.stringify(arr));
+      })              
+      localStorage.setItem("preferences",JSON.stringify(arr));
+      this.router.navigate(['/preferences2']);
     }else{
-      this.router.navigate(['/']);
+      this.router.navigate(['/dashboard']);
     }
   }
 
